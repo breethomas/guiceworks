@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: guiceworks_development
+  pool: 5
+  host: localhost
+
+test: &test
+  adapter: postgresql
+  encoding: utf8
+  reconnect: true
+  database: guiceworks_test
+  pool: 5
+  host: localhost
+

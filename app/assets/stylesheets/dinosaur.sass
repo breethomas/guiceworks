@@ -1,0 +1,26 @@
+// Output configuration
+// -----------------------------------------------------------------------------
+$prefix-for-webkit: false
+$prefix-for-mozilla: false
+$prefix-for-microsoft: false
+$prefix-for-opera: false
+$prefix-for-spec: true
+$legacy-for-ie: true
+
+@import bourbon
+@import utensils/lib
+
+// Core base styles
+@import config
+@import utensils/normalize
+@import utensils/scaffold
+@import utensils/container
+@import utensils/typography
+@import utensils/upgrade
+
+.upgrade-notifications,
+.upgrade-notifications .dinosaur-msg
+  display: block
+
+@import utensils/print
+
