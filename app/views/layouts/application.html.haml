@@ -38,8 +38,7 @@
     = csrf_meta_tag
 
   %body(class="body-#{current_page.template || controller_name}" role="document")
-    -# = render partial: 'layouts/shared/masthead'
-    -# = render partial: 'layouts/shared/navigation'
+    = render partial: 'layouts/shared/masthead'
     %section.main(role="main")
       = yield
     = render partial: 'layouts/shared/upgrade'

@@ -2,9 +2,13 @@
 // -----------------------------------------------------------------------------
 
 // Fonts
++font-face('HelveticaNeueLTStd-Th', 'helveticaneueltstdth', $asset-pipeline:true)
+
 $sans-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+$sans-lite-family: "HelveticaNeueLTStd-Th", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 $serif-family: "Georgia", "Times", "Times New Roman", serif
 $mono-family: "Bitstream Vera Sans Mono", "Menslo LG M", "Menlo", "Monaco", monospace
+$heading-family: $sans-lite-family
 
 // Base Sizing
 $context-px: 16
@@ -14,19 +18,17 @@ $base-line-height: 1.4
 $base-vertical: $base-font-size * $base-line-height
 $base-padding: 0.5em 0.8em
 
+
 // Colors
-$magenta: #ff00ff
-$cyan: #00ffff
+$magenta: #fe5fa2
 $red: #b22222
-$orange: #f26522
 $yellow: #ffc40d
 $green: #46a546
 $blue: #268bd2
-$indigo: #4b0082
-$violet: #ee82ee
 
 // CI
-$primary: $blue
+$primary: $magenta
+$secondary: #fe94c1
 
 // Base element colors
 $base-color: #333
@@ -64,8 +66,8 @@ $disabled-opacity: 0.65
 // Shadows
 $small-drop-dark: 0 1px 0 rgba(black, 0.3)
 $large-drop-dark: 0 1px 4px rgba(black, 0.3)
-$small-drop-lite: 0 1px 0 rgba(white, 0.7)
-$large-drop-lite: 0 1px 4px rgba(white, 0.7)
+$small-drop-lite: 0 1px 0 rgba(white, 0.45)
+$large-drop-lite: 0 1px 4px rgba(white, 0.45)
 
 $small-inset-dark: 0 -1px 0 rgba(black, 0.3)
 $large-inset-dark: inset 0 1px 4px rgba(black, 0.3)
@@ -83,31 +85,12 @@ $horiz-offset-padding: 10
 // -----------------------------------------------------------------------------
 
 // Status colors
-$inverse: #333
-$standard: #f5f5f5
-$info: #999
 $important: $blue
 $success: $green
-$warning: $yellow
 $danger: $red
 $error: $red
 
-// Define core list pairings (class name, color value)
-$important-list: important $important
-$success-list: success $success
-$warning-list: warning $warning
-$danger-list: danger $danger
-$error-list: error $error
-
-$inverse-list: inverse $inverse
-$standard-list: standard $standard
-$info-list: info $info
-$primary-list: primary $primary
-
-// Combine lists for simpler pairings (nil list is for passing a single list)
-$status-list: $important-list, $success-list, $warning-list, $danger-list
-$color-list: $inverse-list, $standard-list, $info-list, $primary-list
-$full-list: join($status-list, $color-list)
+// Lists
 $nil-list: nil nil
 
 
@@ -120,22 +103,4 @@ $zindex-navbar: 1030
 $zindex-modal-backdrop: 1040
 $zindex-modal: 1050
 $zindex-flash-message: 1060
-
-
-// Utensils overrides
-// -----------------------------------------------------------------------------
-$code-color-inline: $red
-$decal-list: append($status-list, $info-list)
-$notification-list: $important-list, $success-list, warning darken($warning, 15%), $danger-list
-$table-list: $status-list
-$progress-list: $status-list
-
-
-// Auto generate base utensils
-// -----------------------------------------------------------------------------
-$auto-generate-semigloss: btn, $full-list
-
-
-// Project specific
-// -----------------------------------------------------------------------------
 

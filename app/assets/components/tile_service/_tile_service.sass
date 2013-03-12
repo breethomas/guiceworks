@@ -1,0 +1,19 @@
+.tile-service
+  @extend %tile
+  text-shadow: $small-drop-lite
+  text-align: center
+
+.tile-service .tile-front
+  background-color: $secondary
+.tile-service .tile-side
+  background-color: lighten($secondary, 10%)
+
+.tile-icon
+  +box-sizing(border-box)
+  +circle(80px)
+  border: 7px solid #de2f79
+  box-shadow: $small-drop-lite
+  margin: 60px auto 2em
+
+.tile-service .tile-content
+  display: none

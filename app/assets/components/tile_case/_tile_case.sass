@@ -1,0 +1,32 @@
+.tile-case
+  @extend %tile
+  text-shadow: 0 -1px 0 black
+
+.tile-case .tile-front
+  background: #1e1e1e image-url('fpo/tile-topfan.jpg') no-repeat 0 0
+  background-size: cover
+.tile-case .tile-side
+  background-color: lighten(#1e1e1e, 10%)
+
+.tile-case .tile-header
+  position: absolute
+  bottom: 2em
+  right: 2em
+  z-index: 2
+
+.tile-case .tile-heading
+  color: #676666
+
+
+.tile-crop
+  +linear-gradient(-58deg, transparent 50%, #1e1e1e 50%)
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+  top: 0
+  right: 0
+
+.tile-side .tile-crop
+  display: none
+

@@ -1,0 +1,37 @@
+$heading-font-weight: normal
+@import utensils/typography
+
+// TODO: Move this outta here!
+a
+  +transition(all $speed ease)
+
+em
+  font-family: $serif-family
+
+
+.masthead-heading
+  +font-size(67)
+  color: #585757
+  line-height: 1
+
+.masthead-copy
+  +font-size(16)
+
+.tile-heading
+  +font-size(40)
+  color: #d0045b
+  line-height: 1
+
+.tile-tagline
+  +font-size(15)
+  font-family: $serif-family
+  font-style: italic
+  color: white
+  color: rgba(white, 0.7)
+  margin: 0
+
+.content-heading
+  +font-size(60)
+  color: #585757
+  line-height: 1
+

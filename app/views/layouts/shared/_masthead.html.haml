@@ -1,0 +1,14 @@
+%header.masthead
+  %h1#masthead_heading.masthead-heading(data-mercury="full")><
+    = render_region :masthead_heading do
+      Heading.
+
+  %article.masthead-content(data-bindable="collapse" data-behavior="checkbox" role="tab")
+    %a.masthead-more-info.collapse-toggle(href="#masthead_information") &darr;
+    %div#masthead_information.collapse(role="tabpanel")
+      %p#masthead_copy.masthead-copy(data-mercury="full")><
+        = render_region :masthead_copy do
+          = lorem_ipsum 8
+
+      = link_to "Squeeze the Guice", "#"
+

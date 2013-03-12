@@ -1,0 +1,25 @@
+.btn-cta
+  +box-sizing(border-box)
+  +circle(60px)
+  +font-size(11)
+  position: relative
+  background-color: black
+  color: white
+  line-height: 1
+  text-align: center
+  text-shadow: none
+  text-transform: uppercase
+  display: block
+  padding-top: 18px
+  &:visited
+    color: white
+  &:after
+    content: ""
+    width: 30px
+    height: 30px
+    background-color: black
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+
