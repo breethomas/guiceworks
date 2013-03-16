@@ -10,9 +10,7 @@ powder open
 ```
 
 ## WIP
-- Should be able to close all
-- Blocks need to translate to `height:auto`
-- Styles around the block
+- Styles around the blocks
+- Clean up the CS
 - Bug on some rendering
-- Clean the CS
 

@@ -4,13 +4,14 @@
 class guiceworks.Tiles
   constructor: (@tiles) ->
     @initialize()
-    @addListeners()
     @clone()
+    @addListeners()
 
 
   initialize: ->
     @document = $(document)
     @length = @tiles.length
+    @toggles = @tiles.find '.tile-toggle'
     @has_tranny = utensils.Detect.hasTransition
     @tranny_end = utensils.Detect.transition.end
 
@@ -64,9 +65,9 @@ class guiceworks.Tiles
 
 
   addListeners: ->
-    @tiles.on 'click.tiles', => @triggered arguments...
+    @toggles.on 'click.tile', => @triggered arguments...
 
 
   removeListeners: ->
-    @tiles.off 'click.tiles'
+    @toggles.off 'click.tile'
 

@@ -1,11 +1,14 @@
-%article.tile-service
-  .tile-front
-    %header.tile-header
-      %div.tile-icon
-      %h2.tile-heading= title
+%article.tile.tile-service
+  %a.tile-toggle(href="##{title.parameterize}")
+  %section.tile-cube
+    .tile-front
+      %header.tile-header
+        %div.tile-icon
+        %h2.tile-heading= title
 
   %section.tile-content
     %a.close(href="#close") &times;
     %header.content-header
       %h1.content-heading= title
       %p This is a service
+

@@ -1,5 +1,4 @@
 .tile-case
-  @extend %tile
   text-shadow: 0 -1px 0 black
 
 .tile-case .tile-front
@@ -17,15 +16,17 @@
 .tile-case .tile-heading
   color: #676666
 
-
 .tile-crop
-  +linear-gradient(-58deg, transparent 50%, #1e1e1e 50%)
-  position: absolute
-  width: 100%
-  height: 100%
   z-index: 1
-  top: 0
+
+.tile-crop:after
+  +triangle(300px, #1e1e1e, down-right)
+  border-left-width: 480px
+  position: absolute
+  bottom: 0
   right: 0
+  content: ""
+  z-index: 1
 
 .tile-side .tile-crop
   display: none

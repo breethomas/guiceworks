@@ -1,9 +1,11 @@
-%article.tile-work
-  .tile-front
-    %header.tile-header
-      %h2.tile-heading= title
-      %p.tile-tagline Creative Concept, UI Design
-      %div.btn-cta View Work
+%article.tile.tile-work
+  %a.tile-toggle(href="##{title.parameterize}")
+  %section.tile-cube
+    .tile-front
+      %header.tile-header
+        %h2.tile-heading= title
+        %p.tile-tagline Creative Concept, UI Design
+        %div.btn-cta View Work
 
   %section.tile-content
     %a.close(href="#close") &times;

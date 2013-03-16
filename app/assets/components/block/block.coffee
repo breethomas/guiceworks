@@ -9,6 +9,7 @@ class guiceworks.Block
 
   initialize: ->
     @document = $(document)
+    @dimension = 'height'
     @block = null
     @has_tranny = utensils.Detect.hasTransition
     @tranny_end = utensils.Detect.transition.end
@@ -17,11 +18,16 @@ class guiceworks.Block
 # PUBLIC #
 
   activate: ->
+    scroll = 'scrollHeight'
+    @block[@dimension](0)
     @transition 'addClass', => @activated arguments...
+    @has_tranny && @block[@dimension](@block[0]?[scroll])
 
 
   deactivate: ->
+    @reset(@block, @block[@dimension]())
     @transition('removeClass', => @deactivated arguments...) if @block
+    @block[@dimension](0)
 
 
   render: (tile, row) ->
@@ -54,6 +60,12 @@ class guiceworks.Block
     @block.remove()
     @block = null
     @document.trigger 'block:deactivated'
+
+
+  reset: (panel, size) ->
+    panel.removeClass('collapse')[@dimension](size || 'auto')[0]?.offsetWidth
+    panel[(if size isnt null then 'addClass' else 'removeClass')]('collapse')
+    return @
 
 
   transition: (method, fn) ->

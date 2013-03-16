@@ -12,7 +12,7 @@ class guiceworks.GridController
 
 
   options: ->
-    @data.selectors ?= '.tile-work,.tile-case,.tile-service'
+    @data.selectors ?= '.tile'
 
 
   initialize: ->
@@ -47,6 +47,13 @@ class guiceworks.GridController
     _.defer =>
       @tiles.activate @active.tile
       @block.activate()
+
+
+  next: ->
+    @exists = false
+    return unless @active
+    @exists = true
+    @show()
 
 
 # PROTECTED #
@@ -94,13 +101,14 @@ class guiceworks.GridController
     @debounced = _.debounce @resized, 300
     @document.on 'tiles:activate', => @activate arguments...
     @document.on 'tiles:deactivate', => @deactivate arguments...
-    @document.on 'block:deactivated', => @show arguments...
+    @document.on 'block:deactivated', => @next arguments...
     @window.on 'resize.grid_controller', => @debounced arguments...
 
 
   removeListeners: ->
     @document.off 'tiles:activate'
     @document.off 'tiles:deactivate'
+    @document.off 'block:deactivated'
     @window.off "resize.grid_controller"
     @debounced = null
 

@@ -1,14 +1,16 @@
-%article.tile-case
-  .tile-front(data-img="fpo/tile-qdoba.jpg")
-    %header.tile-header
-      %h2.tile-heading= title
-      %p.tile-tagline User Experience, UI Design
-    %div.tile-crop
+%article.tile.tile-case
+  %a.tile-toggle(href="##{title.parameterize}")
+  %section.tile-cube
+    .tile-front(data-img="fpo/tile-qdoba.jpg")
+      %header.tile-header
+        %h2.tile-heading= title
+        %p.tile-tagline User Experience, UI Design
+      %div.tile-crop
 
   %section.tile-content
     %a.close(href="#close") &times;
     %header.content-header
       %h1.content-heading= title
       %p This is a case study
-
+      %p= lorem_ipsum 4
 
