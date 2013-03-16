@@ -10,6 +10,7 @@ powder open
 ```
 
 ## WIP
+- Lock to the scroll top
 - Styles around the blocks
 - Clean up the CS
 - Bug on some rendering

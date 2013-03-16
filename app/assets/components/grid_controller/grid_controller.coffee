@@ -16,6 +16,7 @@ class guiceworks.GridController
 
 
   initialize: ->
+    @mover = $('html, body')
     @document = $(document)
     @window = $(window)
     @tiles = new guiceworks.Tiles(@el.find @data.selectors)
@@ -47,6 +48,7 @@ class guiceworks.GridController
     _.defer =>
       @tiles.activate @active.tile
       @block.activate()
+      @mover.animate scrollTop: @active.tile.offset().top, 250
 
 
   next: ->
@@ -101,6 +103,7 @@ class guiceworks.GridController
     @debounced = _.debounce @resized, 300
     @document.on 'tiles:activate', => @activate arguments...
     @document.on 'tiles:deactivate', => @deactivate arguments...
+    @document.on 'block:deactivate', => @deactivate arguments...
     @document.on 'block:deactivated', => @next arguments...
     @window.on 'resize.grid_controller', => @debounced arguments...
 
@@ -108,6 +111,7 @@ class guiceworks.GridController
   removeListeners: ->
     @document.off 'tiles:activate'
     @document.off 'tiles:deactivate'
+    @document.off 'block:deactivate'
     @document.off 'block:deactivated'
     @window.off "resize.grid_controller"
     @debounced = null

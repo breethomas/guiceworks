@@ -3,5 +3,36 @@
   clear: both
   z-index: 1
   // &.in
-    // +transition-delay($speed)
+    +transition-delay($speed)
+
+.block .btn-close
+  position: absolute
+  top: 20px
+  left: 20px
+
+.block-article
+  padding: to_em(60) 0
+
+.block-header
+  text-align: center
+
+.block-content
+  @extend %clearfix
+  border-top: 1px solid #d1d1d1
+  margin-left: to_em(85)
+  margin-top: to_em(50)
+  padding-top: to_em(50)
+
+.block-details,
+.block-showcase
+  @extend %base-column
+
+.block-details
+  width: 30%
+  margin-right: 10%
+
+.block-figure
+  background-color: #d1d1d1
+  width: 600px
+  height: 400px
 

@@ -8,9 +8,25 @@
       %div.tile-crop
 
   %section.tile-content
-    %a.close(href="#close") &times;
-    %header.content-header
-      %h1.content-heading= title
-      %p This is a case study
-      %p= lorem_ipsum 4
+    %a.btn-close(href="#close") &times;
+    %article.block-article
+      %header.block-header
+        %h1.block-heading= title
+        %h2.block-subheading This is a case study
+
+      %section.block-content
+        %div.block-details
+          %h3.content-heading Challenge
+          %p= lorem_ipsum 4
+
+          %h3.content-heading Solution
+          %p= lorem_ipsum 6
+
+          %blockquote
+            %p<
+              &#8220;#{lorem_ipsum(3)}&#8221;
+              <small>David Craven / <cite title="www.qdoba.com">CMO Qdoba Mexican Grill</cite></small>
+
+        %div.block-showcase
+          .block-figure
 

@@ -4,7 +4,7 @@
 class guiceworks.Block
   constructor: ->
     @initialize()
-    @addListeners()
+    # @addListeners()
 
 
   initialize: ->
@@ -40,9 +40,11 @@ class guiceworks.Block
   resize: (row) ->
     return unless @block
     new_block = @block.clone()
+    @removeListeners()
     @block.remove()
     row.after new_block
     @block = row.next '.block'
+    @addListeners()
 
 
   dispose: ->
@@ -53,13 +55,21 @@ class guiceworks.Block
 
 
   activated: ->
+    @addListeners()
+    @reset(@block)
     @document.trigger 'block:activated'
 
 
   deactivated: ->
+    @removeListeners()
     @block.remove()
     @block = null
     @document.trigger 'block:deactivated'
+
+
+  close: (e) ->
+    e?.preventDefault()
+    @document.trigger 'block:deactivate'
 
 
   reset: (panel, size) ->
@@ -82,8 +92,11 @@ class guiceworks.Block
 
 
   addListeners: ->
+    @close_btn = @block.find '.btn-close'
+    @close_btn.on 'click.close', => @close arguments...
 
 
   removeListeners: ->
-
+    @close_btn.off('click.close') if @close_btn
+    @close_btn = null
 

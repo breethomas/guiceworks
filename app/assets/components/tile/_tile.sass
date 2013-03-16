@@ -24,7 +24,7 @@
 .tile-cube
   +tile-transition($speed)
   +transform-style(preserve-3d)
-  +transition-delay($speed)
+  // +transition-delay($speed)
   position: absolute
   top: 0
   left: 0
@@ -34,7 +34,7 @@
 
 .tile.active .tile-cube
   +transform(rotateX(-90deg))
-  +transition-delay(0)
+  // +transition-delay(0)
 
 .tile-front,
 .tile-side
@@ -45,17 +45,11 @@
   padding: 2em
   overflow: hidden
 
-// .tile-front
+.tile.active .tile-front
   +transform(translateZ(150px))
 
 .tile-side
   +transform(rotateX(90deg) translateZ(450px))
-
-
-// TODO: Move this to block?
-.content-header
-  text-align: center
-  padding-top: to_em(60)
 
 .tile .tile-content
   @extend %visuallyhidden
