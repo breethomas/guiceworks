@@ -4,7 +4,6 @@
 class guiceworks.Block
   constructor: ->
     @initialize()
-    # @addListeners()
 
 
   initialize: ->
@@ -22,12 +21,14 @@ class guiceworks.Block
     @block[@dimension](0)
     @transition 'addClass', => @activated arguments...
     @has_tranny && @block[@dimension](@block[0]?[scroll])
+    @bind()
 
 
   deactivate: ->
     @reset(@block, @block[@dimension]())
     @transition('removeClass', => @deactivated arguments...) if @block
     @block[@dimension](0)
+    @release()
 
 
   render: (tile, row) ->
@@ -40,15 +41,25 @@ class guiceworks.Block
   resize: (row) ->
     return unless @block
     new_block = @block.clone()
+    @release()
     @removeListeners()
     @block.remove()
     row.after new_block
     @block = row.next '.block'
     @addListeners()
+    @bind()
 
 
   dispose: ->
     @removeListeners()
+
+
+  bind: ->
+    @bindables = new utensils.Bindable(@block).bindAll()
+
+
+  release: ->
+    @bindables.dispose() if @bindables
 
 
 # PROTECTED #

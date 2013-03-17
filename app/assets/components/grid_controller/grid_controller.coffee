@@ -70,7 +70,7 @@ class guiceworks.GridController
   setGridDimensions: ->
     @columns = @getNumberOfColumns()
     @rows = @getNumberOfRows()
-    console?.log "cols: #{@columns}", "rows: #{@rows}"
+    # console?.log "cols: #{@columns}", "rows: #{@rows}"
     {columns: @columns, rows: @rows}
 
 
