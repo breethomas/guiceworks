@@ -10,8 +10,12 @@ powder open
 ```
 
 ## WIP
-- CMSimplify
 - Add real copy
 - Add a Rake task for pulling the db
+- Clean up partials so they handle configuration better
+  - Images
+  - Carousels
+  - Cube panel type and icons
+  - Abstract commonality?
 - Revisit carousels?
 
