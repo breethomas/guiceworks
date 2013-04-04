@@ -11,13 +11,19 @@
     %a.btn-close(href="#close") &times;
     %article.block-article
       %header.block-header
-        %h1.block-heading= title
-        %h2.block-subheading This is a work section
+        %h1.block-heading(id="block_heading_#{index}" data-mercury="full")><
+          = render_region "block_heading_#{index}" do
+            = title
+
+        %h2.block-subheading(id="block_subheading_#{index}" data-mercury="full")><
+          = render_region "block_subheading_#{index}" do
+            This is a work section
 
       %section.block-content
         %div.block-details
-          %h3.content-heading Hotness
-          %p= lorem_ipsum 4
+          %div(id="block_copy_#{index}" data-mercury="full")><
+            = render_region "block_copy_#{index}" do
+              = lorem_ipsum 4
 
         %div.block-showcase
           %section.carousel(data-bindable="carousel-touch" role="presentation" data-keyboard="false")

@@ -10,11 +10,17 @@
     %a.btn-close(href="#close") &times;
     %article.block-article
       %header.block-header
-        %h1.block-heading= title
-        %h2.block-subheading This is a service
+        %h1.block-heading(id="block_heading_#{index}" data-mercury="full")><
+          = render_region "block_heading_#{index}" do
+            = title
+
+        %h2.block-subheading(id="block_subheading_#{index}" data-mercury="full")><
+          = render_region "block_subheading_#{index}" do
+            This is a service
 
       %section.block-content
-        .block-only
-          %p= lorem_ipsum 4
-          %p= lorem_ipsum 2
+        %div.block-only
+          %div(id="block_copy_#{index}" data-mercury="full")><
+            = render_region "block_copy_#{index}" do
+              = lorem_ipsum 4
 

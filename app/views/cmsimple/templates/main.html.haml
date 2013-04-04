@@ -20,5 +20,5 @@
 
 %section.tiles(data-bindable="grid")
   -tiles.each_with_index do |tile, x|
-    = render partial: "cmsimple/partials/tile_#{tile[:type]}", locals: {title: tile[:title]}
+    = render partial: "cmsimple/partials/tile_#{tile[:type]}", locals: {title: tile[:title], index: x}
 
