@@ -32,7 +32,6 @@ class guiceworks.Block
 
 
   render: (tile, row) ->
-    # TODO: Cache this lookup
     markup = tile.find('.tile-content').html()
     row.after @template markup
     @block = row.next '.block'

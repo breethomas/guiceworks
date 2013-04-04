@@ -39,10 +39,6 @@ class guiceworks.GridController
     @active = null
 
 
-  dispose: ->
-    @removeListeners()
-
-
   show: ->
     @block.render(@active.tile, @tiles.eq @active.last)
     _.defer =>
@@ -56,6 +52,10 @@ class guiceworks.GridController
     return unless @active
     @exists = true
     @show()
+
+
+  dispose: ->
+    @removeListeners()
 
 
 # PROTECTED #
