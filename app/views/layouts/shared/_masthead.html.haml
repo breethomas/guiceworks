@@ -6,7 +6,7 @@
   %article.masthead-content(data-bindable="collapse" data-behavior="checkbox" role="tab")
     %a.masthead-more-info.collapse-toggle(href="#masthead_information") &darr;
     %div#masthead_information.collapse(role="tabpanel")
-      %p#masthead_copy.masthead-copy(data-mercury="full")><
+      %div#masthead_copy.masthead-copy(data-mercury="full")><
         = render_region :masthead_copy do
           = lorem_ipsum 8
 

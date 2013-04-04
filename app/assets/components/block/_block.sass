@@ -1,17 +1,17 @@
 .block
-  width: 100%
   clear: both
+  width: 100%
   z-index: 1
   // &.in
     +transition-delay($speed)
 
 .block .btn-close
   position: absolute
-  top: 20px
-  left: 20px
+  top: 0
+  left: 0
 
 .block-article
-  padding: to_em(60) 0
+  padding: 4.25em 0
 
 .block-header
   text-align: center
@@ -19,27 +19,39 @@
 .block-content
   @extend %clearfix
   border-top: 1px solid #d1d1d1
-  margin-left: to_em(85)
-  margin-top: to_em(50)
-  padding-top: to_em(50)
-
-.block-details,
-.block-showcase
-  @extend %base-column
-
-.block-details
-  margin-right: 10%
-  width: 30%
+  margin: 3.5em 1.5em 0
+  padding-top: 3.5em
 
 .block-showcase
   position: relative
-  overflow: hidden
-  width: 60%
 
 .block-showcase .carousel
   overflow: visible
-  width: 60%
 
-.block-only
-  width: 60%
+
+@media (min-width: 40em)
+  .block .btn-close
+    top: 20px
+    left: 20px
+
+@media (min-width: 80em)
+  .block-content
+    margin-left: 6em
+    margin-right: 0
+
+  .block-details,
+  .block-showcase
+    +base-column
+
+  .block-details
+    margin-right: 5%
+    width: 30%
+
+  .block-showcase,
+  .block-showcase .carousel,
+  .block-only
+    width: 65%
+
+  .block-showcase
+    overflow: hidden
 

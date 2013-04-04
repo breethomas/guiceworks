@@ -1,7 +1,6 @@
 $heading-font-weight: normal
 @import utensils/typography
 
-// TODO: Move this outta here!
 a
   +transition(all $speed ease)
 
@@ -16,12 +15,16 @@ blockquote p
 blockquote small
   +font-size(12)
 
+.p-copy
+  margin: 1em 0
+
 .masthead-heading
   +font-size(67)
   color: #585757
   line-height: 1
 
 .masthead-copy
+  @extend .p-copy
   +font-size(16)
 
 .tile-heading

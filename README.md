@@ -10,7 +10,8 @@ powder open
 ```
 
 ## WIP
-- Styles around the blocks
-- Clean up the CS
-- Bug on some rendering?
+- CMSimplify
+- Add real copy
+- Add a Rake task for pulling the db
+- Revisit carousels?
 
