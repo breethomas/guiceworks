@@ -1,24 +1,24 @@
-:ruby
-  tiles = [
-    {type: "work",      title: "Spring Mobile"},
-    {type: "case",      title: "Qdoba"},
-    {type: "work",      title: "Top Fan"},
-    {type: "service",   title: "User Experience"},
-    {type: "case",      title: "Audi"},
-    {type: "service",   title: "UI Design"},
-    {type: "case",      title: "Inspirato"},
-    {type: "work",      title: "Altezza"},
-    {type: "work",      title: "Primo"},
-    {type: "case",      title: "CirrusMD"},
-    {type: "service",   title: "Creative Concept"},
-    {type: "service",   title: "Graphic Design"},
-    {type: "work",      title: "LoDo Software"},
-    {type: "case",      title: "eBags"},
-    {type: "work",      title: "Poparuba"}
-  ]
+-# :ruby
+  -# tiles = [
+    -# {type: "work",      title: "Spring Mobile"},
+    -# {type: "case",      title: "Qdoba"},
+    -# {type: "work",      title: "Top Fan"},
+    -# {type: "service",   title: "User Experience"},
+    -# {type: "case",      title: "Audi"},
+    -# {type: "service",   title: "UI Design"},
+    -# {type: "case",      title: "Inspirato"},
+    -# {type: "work",      title: "Altezza"},
+    -# {type: "work",      title: "Primo"},
+    -# {type: "case",      title: "CirrusMD"},
+    -# {type: "service",   title: "Creative Concept"},
+    -# {type: "service",   title: "Graphic Design"},
+    -# {type: "work",      title: "LoDo Software"},
+    -# {type: "case",      title: "eBags"},
+    -# {type: "work",      title: "Poparuba"}
+  -# ]
 
 
-%section.tiles(data-bindable="grid")
-  -tiles.each_with_index do |tile, x|
-    = render partial: "cmsimple/partials/tile_#{tile[:type]}", locals: {title: tile[:title], index: x}
+-# %section.tiles(data-bindable="grid")
+  -# -tiles.each_with_index do |tile, x|
+    -# = render partial: "cmsimple/partials/tile_#{tile[:type]}", locals: {title: tile[:title], index: x}
 
