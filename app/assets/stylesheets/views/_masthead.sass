@@ -1,0 +1,17 @@
+.masthead
+  @extend %container
+  text-align: center
+  margin-top: 7.5rem
+
+.masthead__content
+  margin-top: 1.3rem
+  margin-bottom: 0.9rem
+
+.masthead .guicicon
+  margin-top: 0.75rem
+  font-size: 2.25rem
+  color: $pink
+
+.masthead .guicicon--arrow--down.active:before
+  @extend .guicicon--arrow--up:before
+

@@ -1,0 +1,25 @@
+%transition-all
+  transition: all $speed ease
+
+%transition-transform
+  transition: transform $speed $ease-in-out-quart
+
+%transition-height
+  transition: height $speed $ease-in-out-quart
+
+%transition-collapse
+  position: relative
+  overflow: hidden
+  height: 0
+
+%transition-collapse-in
+  height: auto
+
+
+.js-collapse
+  @extend %transition-height
+  @extend %transition-collapse
+
+.js-collapse.in
+  @extend %transition-collapse-in
+

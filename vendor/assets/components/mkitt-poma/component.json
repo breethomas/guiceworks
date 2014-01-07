@@ -1,0 +1,14 @@
+{
+  "name": "poma",
+  "repo": "mkitt/poma",
+  "description": "Minimal utility library for modern browsers.",
+  "version": "0.0.2",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

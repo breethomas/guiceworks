@@ -1,4 +1,6 @@
 Guiceworks::Application.routes.draw do
-  #this route should always be last
-  mount Cmsimple::Engine => '/'
+  get '/main'            => 'main#index'
+  get '/styleguide'      => 'styleguide#index'
+  root 'main#index'
 end
+

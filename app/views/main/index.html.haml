@@ -1,0 +1,39 @@
+%header.masthead
+  %h1.heading--masthead Guiceworks.
+  %h2.heading--masthead A fight to rid the world of poor design.
+  %button.guicicon.guicicon--arrow--down(href="#about" data-bindable="collapse")
+  %div#about.masthead__content.markdown.js-collapse
+    = render partial: "main/masthead_copy"
+
+
+%section#panel.panel.js-collapse.in
+  %div.panel__toolbar
+    %button.panel__dismiss.guicicon.guicicon--x.active(href="#panel" data-bindable="collapse")
+
+  %section.panes
+
+    -(1..5).each do |x|
+      %article.pane
+        %header.pane__header
+          %h1.heading Client Name #{x}
+          %h2.heading--sub Service Offering, Another Service, Third Service
+          %p <strong>Challenge:</strong> #{ipsum(4)}
+          %p <strong>Solution:</strong> #{ipsum(4)}
+        %div.panel__figures
+          -['#f1f1f2', '#e6e7e8', '#f1f1f2'].each do |bgc|
+            %div.fpo(style="background-color: #{bgc};")<>
+
+
+%nav.cards(data-bindable="card-controller")
+  -(@cards.tiles).each_with_index do |card, i|
+    :ruby
+      id = @cards.id(card, i)
+      type = @cards.type(card)
+      title = @cards.title(card)
+
+    %div.card(id="card_#{id}" class="card__#{type}" data-index="#{i}" data-id="#{id}" data-bindable="card-view")
+      %header.card__header
+        %h3.title= title
+        %h3.title= id
+
+

@@ -1,0 +1,13 @@
+{
+  "name": "guiceworks",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "mkitt/corduroy": "*",
+    "mkitt/probe": "*",
+    "mkitt/poma": "*",
+    "modeset/bindable": "*"
+  }
+}
+

@@ -1,0 +1,35 @@
+*
+  box-sizing: border-box
+
+html
+  font-size: 100%
+  line-height: 1.4
+  text-rendering: optimizeLegibility
+  text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+html, button, input
+  font-family: $sans-family
+  color: #999
+
+body
+  background-color: white
+  margin: 0
+
+::selection
+  background: #f1f1f1
+  color: #808080
+  text-shadow: none
+
+img
+  max-width: 100%
+  height: auto
+  vertical-align: middle
+
+[hidden], .hidden
+  @extend %hidden
+
+.invisible
+  @extend %invisible
+

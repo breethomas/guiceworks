@@ -5,7 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-unless Cmsimple::Page.where(is_root: true).first
-  page = Cmsimple::Page.create is_root: true, title: 'Home', template: 'default'
-  page.publish!
-end

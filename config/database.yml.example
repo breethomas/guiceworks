@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  database: guiceworks_development
+  min_messages: WARNING
+  encoding: utf-8
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: guiceworks_test
+  min_messages: WARNING
+  encoding: utf-8
+  host: localhost

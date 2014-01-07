@@ -1,0 +1,31 @@
+{
+  "name": "corduroy",
+  "repo": "mkitt/corduroy",
+  "description": "A small collection of commonly used Sass functions, mixins and placeholders.",
+  "version": "0.0.4",
+  "keywords": [
+    "sass",
+    "mixins",
+    "css"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "index.sass",
+    "_corduroy.sass",
+    "functions/_bezier.sass",
+    "functions/_color.sass",
+    "functions/_measurement.sass",
+    "mixins/_clearfix.sass",
+    "mixins/_font_face.sass",
+    "mixins/_movement.sass",
+    "mixins/_shape.sass",
+    "mixins/_overflow_ellipsis.sass",
+    "mixins/_visibility.sass",
+    "snippets/_animation.sass",
+    "snippets/_sticky_footer.sass",
+    "snippets/_tab_focus.sass",
+    "snippets/_transition.sass"
+  ]
+}

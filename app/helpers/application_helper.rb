@@ -1,7 +1,8 @@
 module ApplicationHelper
-  def lorem_ipsum(times=1)
-    lorem = 'Lorem ipsum dolere sit amet nonummy consecuter nomen es quid adspecit. Lorem ipsum dolere sit amet nonummy consecuter nomen es quid adspecit. '
-    lorem * times
-  end
-end
 
+  def ipsum(times = 1, extra = '')
+    lorem = "Lorem ipsum dolere sit amet consecuter adspecit nomen es quid. "
+    raw (lorem * times) + extra.html_safe
+  end
+
+end

@@ -1,0 +1,91 @@
+.card
+  position: relative
+  height: 18.375rem
+  user-select: none
+  cursor: default
+  outline: 1px dotted blue
+
+.card__header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  padding: 1rem
+
+.title
+  font-weight: 100
+  line-height: 1
+
+
+// Client
+.card__client
+  background-color: #0d0d0d
+
+.card__client .title
+  font-size: rem(40)
+  color: #6d6e70
+
+
+// Case Study
+.card__study
+  background-color: #1f1f1f
+
+.card__study .card__header
+  top: auto
+  left: auto
+
+.card__study .title
+  font-size: rem(40)
+  color: #6d6e70
+
+
+// Skill
+.card__skill
+  background-color: $pink
+  text-align: center
+
+.card__skill .title
+  font-size: rem(24)
+  color: #990258
+
+
+#mq_monitor
+  @extend %hidden
+  position: absolute
+  z-index: 1
+
+
+@media (min-width: 30em)
+  #mq_monitor
+    z-index: 2
+  .cards
+    font-size: 0
+  .card
+    display: inline-block
+    width: 50%
+
+@media (min-width: 60em)
+  #mq_monitor
+    z-index: 3
+  .card
+    width: 33.33333%
+
+@media (min-width: 75em)
+  #mq_monitor
+    z-index: 4
+  .card
+    width: 25%
+
+@media (min-width: 100em)
+  #mq_monitor
+    z-index: 5
+  .card
+    width: 20%
+
+@media (min-width: 120em)
+  #mq_monitor
+    z-index: 6
+  .card
+    width: 16.66666%
+

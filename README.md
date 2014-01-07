@@ -1,20 +1,13 @@
 # Guiceworks
-
-## Installation
-
-```
-bundle
-bundle exec rake db:create db:migrate db:seed
-powder link
-powder open
-```
+Pink.
 
 ## WIP
-- Clean up partials so they handle configuration better
-  - Images
-  - Carousels
-  - Cube panel type and icons
-  - Abstract commonality?
-- Figure out a better way for editing
-- Revisit carousels?
+- [x] Find the last card in the row so we can insert the panels
+- [x] Find how many cards are in the current row so we can draw the panels
+- [x] Grab the cards in that row
+- [x] Find out which row that card is in
+- [ ] Track which card is active
+- [ ] Optimize the `insertAfter` for the panel
+- [ ] Add `insertAfter` to the poma library
+
 

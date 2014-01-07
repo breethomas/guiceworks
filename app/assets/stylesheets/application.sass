@@ -1,43 +1,16 @@
-// Output configuration
-// -----------------------------------------------------------------------------
-$prefix-for-webkit: true
-$prefix-for-mozilla: true
-$prefix-for-microsoft: true
-$prefix-for-opera: true
-$prefix-for-spec: true
-$legacy-for-ie: true
+$context-px: 16
 
-@import bourbon
-@import utensils/lib
-@import components/mixins
+@import mkitt-corduroy/corduroy
 
-@import config
-@import utensils/normalize
-@import utensils/scaffold
-@import utensils/container
-@import utensils/transition
-@import utensils/collapse
+@import base/config
+@import base/scaffold
+@import base/transitions
+@import base/typography
+@import base/iconography
+@import base/elements
+@import base/containers
 
-@import components/typography
-@import components/guicicon
-// @import utensils/carousel
-// @import utensils/cursor_hand
+@import components/cards
 
-// @import components/tile
-// @import components/block
-// @import components/btn_cta
-// @import components/btn_close
-
-// @import components/tile_case
-// @import components/tile_service
-// @import components/tile_work
-
-@import components/masthead
-@import components/footer
-
-// Layouts and application specific imports
-@import utensils/upgrade
-
-// Let them print
-@import utensils/print
+@import views/masthead
 
