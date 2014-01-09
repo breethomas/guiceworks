@@ -13,7 +13,6 @@ class guiceworks.CardController
 
   setPanelPositioning: (index) ->
     # row = @getRow(index)
-
     last_in_row = @getLastCardInRow(index)
     cards_in_row = @getCardsInRow(index)
 

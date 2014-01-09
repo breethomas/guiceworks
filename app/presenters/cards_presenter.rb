@@ -36,7 +36,7 @@ class CardsPresenter
 
 
   def id(card, index)
-    "#{card[:title]}_#{index}".underscore
+    "#{title(card).gsub(/\s+/, '_').downcase}_#{index}".underscore
   end
 
 end
