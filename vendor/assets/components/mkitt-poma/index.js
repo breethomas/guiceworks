@@ -92,6 +92,15 @@ window.poma = (function() {
   }
 
 
+  poma.insertAfter = function(node, target) {
+    var parent = target.parentNode
+    if (parent.lastchild === target) {
+      return parent.appendChild(node)
+    }
+    return parent.insertBefore(node, target.nextSibling)
+  }
+
+
   poma.plugin = function(object, fn) {
     if (typeof poma[fn] === 'function')
       return console.error('The "' + fn + '" function already exists on poma');

@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-component install --force --out=./vendor/assets/components
+cd ./vendor/assets/
+component install --force
+cd -
