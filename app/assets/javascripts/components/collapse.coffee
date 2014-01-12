@@ -1,4 +1,4 @@
-class guiceworks.Collapse
+class guiceworks.components.Collapse
   constructor: (@el, data) ->
     @data = if data then data else @el.dataset
     @initialize()
@@ -67,5 +67,5 @@ class guiceworks.Collapse
     @activate()
 
 
-Bindable.register('collapse', guiceworks.Collapse)
+# Bindable.register('collapse', guiceworks.Collapse)
 
