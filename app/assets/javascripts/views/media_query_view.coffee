@@ -1,15 +1,15 @@
-#= require ./debounce
+class guiceworks.views.MediaQueryView
+  system: `undefined` # injected
 
-class guiceworks.MediaQueryMonitor
-  constructor: ->
-    @initialize()
+  setup: ->
+    console?.log 'MediaQueryView.setup'
+    @el = @create()
+    @num_columns = null
     @addListeners()
-    @resized()
 
 
   initialize: ->
-    @el = @create()
-    @num_columns = null
+    @resized()
 
 
   create: ->
@@ -19,11 +19,7 @@ class guiceworks.MediaQueryMonitor
 
 
   numberOfColumns: ->
-    return parseInt(window.getComputedStyle(@el).getPropertyValue('z-index'), 10)
-
-
-  dispose: ->
-    @removeListeners()
+    parseInt(window.getComputedStyle(@el).getPropertyValue('z-index'), 10)
 
 
   addListeners: ->
@@ -40,5 +36,5 @@ class guiceworks.MediaQueryMonitor
     num_columns = @numberOfColumns()
     return if num_columns is @num_columns
     @num_columns = num_columns
-    $.trigger(document, 'columns:change', { num_columns })
+    @system.notify('MediaQueryView:resized', num_columns)
 

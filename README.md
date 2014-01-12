@@ -2,14 +2,14 @@
 Pink.
 
 ## WIP
-- [x] Render the contents of a buttons panel inline and hidden
+- [x] Render the contents of a buttons panel in-line and hidden
 - [ ] On click, swap the active states of all buttons
 - [ ] On click, render the hidden contents within a button to the panel
-- [ ] Only move the panel if the row changes on a click
+- [x] Only move the panel if the row changes on a click
 - [ ] Reposition the panel on resize (yuck)
 - [ ] Panel swapping should have collapse and slide transitions
 - [ ] Cleanup all of the behaviors
-  - Can we remove some of the methods created for the multiple panels?
+- [ ] Can we remove some of the methods created for the multiple panels?
 - [ ] Use the correct markup for buttons
 - [ ] Create styles for each type of panel contents
 - [ ] Rock the correct fonts
@@ -18,6 +18,8 @@ Pink.
 - [ ] Meta program in the content markdown files and image directories
 - [ ] Add FPO images and lazy load those jewels
 - [ ] Track which card is active?
+- [ ] Turn event name strings into constants
+- [ ] Cleanup `MastheadView`
 
 
 
