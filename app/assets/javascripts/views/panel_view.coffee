@@ -4,17 +4,19 @@ class guiceworks.views.PanelView
   setup: ->
     console?.log 'PanelView.setup'
     @panel = document.getElementById('panel')
-    @insertion_index = null
+    @container = document.getElementById('panel_container')
+    @insert_after_element = null
 
 
   initialize: ->
 
 
-  setCards: (@cards) ->
+  insertAfter: (element) ->
+    return if element is @insert_after_element
+    @insert_after_element = element
+    $.insertAfter(@panel, @insert_after_element)
 
 
-  setPanelInsertionPoint: (insertion_index) ->
-    return if insertion_index is @insertion_index
-    @insertion_index = insertion_index
-    $.insertAfter(@panel, @cards[@insertion_index])
+  render: (markup) ->
+    @container.innerHTML = markup
 

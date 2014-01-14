@@ -3,24 +3,37 @@ class guiceworks.models.CardsModel
 
   setup: ->
     console?.log 'CardsModel.setup'
+    @index = null
+    @cards = null
     @num_columns = null
-    @num_cards = null
 
 
   setNumberOfColumns: (@num_columns) ->
+    @system.notify('CardsModel:insertAfter', @getLastElementInRow(@index))
 
 
-  setNumberOfCards: (@num_cards) ->
+  setCards: (@cards) ->
+    @system.notify('CardsModel:setCards', @cards)
 
 
-  getRow: (index) ->
-    Math.floor(index / @num_columns)
+  setActivatedIndex: (@index) ->
+    @system.notify('CardsModel:setActive', @cards[@index])
+    @system.notify('CardsModel:panelData', @getPanelData(@index))
+    @system.notify('CardsModel:insertAfter', @getLastElementInRow(@index))
+
+
+  getRow: ->
+    Math.floor(@index / @num_columns)
 
 
   getLastIndexInRow: (row) ->
     ((row + 1) * @num_columns) - 1
 
 
-  updateInsertionPoint: (index) ->
-    @system.notify('CardsModel:updatedInsertionPoint', @getLastIndexInRow(@getRow(index)))
+  getLastElementInRow: ->
+    @cards[@getLastIndexInRow(@getRow(@index))]
+
+
+  getPanelData: ->
+    @cards[@index].querySelector('.js_panel_contents').innerHTML
 

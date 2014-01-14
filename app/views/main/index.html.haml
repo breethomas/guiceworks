@@ -19,7 +19,7 @@
         %h3.title= title
         %h3.title= id
 
-      %div.js_card_contents.hidden
+      %div.js_panel_contents.hidden
         %article.pane(id="pane_#{id}" class="pane__#{type}" data-index="#{i}" data-id="#{id}")
           %header.pane__header
             %h1.heading #{title} #{i}
@@ -34,15 +34,5 @@
 %section#panel.panel.js-collapse.in
   %div.panel__toolbar
     %button.panel__dismiss.guicicon.guicicon--x.active(href="#panel" data-bindable="collapse")
-  %div#pane_container.pane__container
-
-    %article.pane
-      %header.pane__header
-        %h1.heading Client Name
-        %h2.heading--sub Service Offering, Another Service, Third Service
-        %p <strong>Challenge:</strong> #{ipsum(4)}
-        %p <strong>Solution:</strong> #{ipsum(4)}
-      %div.panel__figures
-        -['#f1f1f2', '#e6e7e8', '#f1f1f2'].each do |bgc|
-          %div.fpo(style="background-color: #{bgc};")<>
+  %div#panel_container.pane__container
 

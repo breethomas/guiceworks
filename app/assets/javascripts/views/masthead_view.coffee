@@ -5,6 +5,7 @@ class guiceworks.views.MastheadView
     console?.log 'MastheadView.setup'
     @collapse = null
 
+
   initialize: ->
     @el = document.getElementById('masthead')
     @collapse_trigger = @el.querySelector('[data-bindable="collapse"]')

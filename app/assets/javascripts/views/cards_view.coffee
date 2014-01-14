@@ -10,12 +10,16 @@ class guiceworks.views.CardsView
 
   initialize: ->
     @system.notify('CardsView:receivedCards', @cards)
-    @system.notify('CardsView:numberOfCards', @cards.length)
+
+
+  setActive: (card) ->
+    item.classList.remove('active') for item in @cards
+    card.classList.add('active')
 
 
   activate: (card) ->
     index = parseInt(card.dataset.index, 10)
-    @system.notify('CardsView:activated', index)
+    @system.notify('CardsView:indexActivated', index)
 
 
   addListeners: ->
