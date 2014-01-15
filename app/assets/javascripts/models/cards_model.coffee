@@ -2,6 +2,7 @@ class guiceworks.models.CardsModel
   system: `undefined` # injected
 
   setup: ->
+    @data = {}
     @index = null
     @cards = null
     @num_columns = null
@@ -33,5 +34,5 @@ class guiceworks.models.CardsModel
 
 
   getPanelData: ->
-    @cards[@index].querySelector('.js_panel_contents').innerHTML
+    @data[@cards[@index].id] ?= @cards[@index].querySelector('.js_panel_contents').innerHTML
 
