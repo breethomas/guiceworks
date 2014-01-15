@@ -2,11 +2,19 @@ class guiceworks.views.MastheadView
   system: `undefined` # injected
 
   setup: ->
-    @collapse = null
 
 
   initialize: ->
-    @el = document.getElementById('masthead')
-    @collapse_trigger = @el.querySelector('[data-bindable="collapse"]')
-    @collapse = new guiceworks.components.Collapse(@collapse_trigger)
+    @button = document.getElementById('about_trigger')
+    @collapse = new guiceworks.components.Collapse(document.getElementById('about'))
+    @addListeners()
+
+
+  addListeners: ->
+    $.on(@button, 'click', @toggle)
+
+
+  toggle: =>
+    @collapse.toggle()
+    @button.classList.toggle('active')
 

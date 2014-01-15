@@ -1,18 +1,13 @@
 class guiceworks.components.Collapse
-  constructor: (@el) ->
+  constructor: (@target) ->
     @initialize()
-    @addListeners()
 
 
-  # This could wait till an initial trigger
   initialize: ->
-    @activated = @el.classList.contains('active')
-    id = @el.getAttribute('href').replace(/^#/, '')
-    @target = document.getElementById(id)
+    @activated = false
 
 
   activate: ->
-    @el.classList.add('active')
     @target.style.height = 0
     @transition('add')
     probe.transitionend && @target.style.height = @target.scrollHeight + 'px'
@@ -20,7 +15,6 @@ class guiceworks.components.Collapse
 
 
   deactivate: ->
-    @el.classList.remove('active')
     @reset @target.scrollHeight
     @target.style.height = @target.scrollHeight + 'px'
     @transition('remove')
@@ -28,16 +22,9 @@ class guiceworks.components.Collapse
     @activated = false
 
 
-  dispose: ->
-    @removeListeners()
-
-
-  addListeners: ->
-    $.on(@el, 'click', @triggered)
-
-
-  removeListeners: ->
-    $.off(@el, 'click', @triggered)
+  toggle: ->
+    return @deactivate() if @activated
+    @activate()
 
 
   reset: (size) ->
@@ -48,20 +35,14 @@ class guiceworks.components.Collapse
 
 
   transition: (method) ->
-    self = @
-    complete = ->
-      self.target.removeEventListener(probe.transitionend, complete, false)
-      self.reset() if method is 'add'
+    complete = =>
+      @target.removeEventListener(probe.transitionend, complete, false)
+      @reset() if method is 'add'
+      $.trigger(@target, "Collapse:#{method}")
     @target.classList[method]('in')
 
-    if probe.transitionend and @target.classList.contains('js-collapse')
-      @target.addEventListener(probe.transitionend, complete, false)
-    else
-      complete()
+    if probe.transitionend
+      return @target.addEventListener(probe.transitionend, complete, false)
+    complete()
 
-
-  triggered: (e) =>
-    e.preventDefault()
-    return @deactivate() if @activated
-    @activate()
 

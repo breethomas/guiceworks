@@ -1,7 +1,7 @@
 %header#masthead.masthead
   %h1.heading--masthead Guiceworks.
   %h2.heading--masthead A fight to rid the world of poor design.
-  %button.guicicon.guicicon--arrow--down(href="#about" data-bindable="collapse")
+  %button#about_trigger.guicicon.guicicon--arrow--down(href="#about")
   %div#about.masthead__content.markdown.js-collapse
     = render partial: "main/masthead_copy"
 
@@ -27,12 +27,12 @@
             %p <strong>Challenge:</strong> #{ipsum(4)}
             %p <strong>Solution:</strong> #{ipsum(4)}
           %div.panel__figures
-            -['#f1f1f2', '#e6e7e8', '#f1f1f2'].each do |bgc|
+            -['#f1f1f2', '#e6e7e8', '#f1f1f2', '#e6e7e8'].each do |bgc|
               %div.fpo(style="background-color: #{bgc};")<>
 
 
 %section#panel.panel.js-collapse
   %div.panel__toolbar
-    %button#panel_dismiss.panel__dismiss.guicicon.guicicon--x(href="#panel" data-bindable="collapse")
+    %button#panel_dismiss.panel__dismiss.guicicon.guicicon--x(href="#panel")
   %div#panel_container.pane__container
 

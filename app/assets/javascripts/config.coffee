@@ -24,6 +24,7 @@ class guiceworks.Config
     @system.mapSingleton('panelView', guiceworks.views.PanelView)
     @system.mapSingleton('cardsView', guiceworks.views.CardsView)
 
+
     # Handlers
     @system.mapHandler('MediaQueryView:resized', 'cardsModel', 'setNumberOfColumns')
 
@@ -34,8 +35,8 @@ class guiceworks.Config
     @system.mapHandler('CardsModel:setActivePanel', 'panelView', 'setActive')
     @system.mapHandler('CardsModel:insertAfter', 'panelView', 'insertAfter')
 
-    @system.mapHandler('Application:startupComplete', 'mastheadView', 'initialize')
-    @system.mapHandler('Application:startupComplete', 'panelView', 'initialize')
-    @system.mapHandler('Application:startupComplete', 'cardsView', 'initialize')
-    @system.mapHandler('Application:startupComplete', 'mediaQueryView', 'initialize')
+
+    # Instantiate
+    for instance in ['mastheadView', 'panelView', 'cardsView', 'mediaQueryView']
+      @system.mapHandler('Application:startupComplete', instance, 'initialize')
 

@@ -3,13 +3,13 @@ class guiceworks.views.PanelView
 
   setup: ->
     @panel = document.getElementById('panel')
-    @dismiss = document.getElementById('panel_dismiss')
     @container = document.getElementById('panel_container')
     @insert_after_element = null
 
 
   initialize: ->
-    @collapse = new guiceworks.components.Collapse(@dismiss)
+    @collapse = new guiceworks.components.Collapse(@panel)
+    $.on(document.getElementById('panel_dismiss'), 'click', => @collapse.deactivate())
 
 
   setActive: (markup, element) ->
@@ -36,15 +36,13 @@ class guiceworks.views.PanelView
     setTimeout(( => show()), 500)
 
 
-
   transition: (markup, element) ->
-    delay = if !@collapse.activated then 10 else 500
-    @collapse.deactivate() if @collapse.activated
-    setTimeout(( => @transitionComplete(markup, element)), delay)
+    complete = =>
+      @render(markup)
+      @insertAfter(element)
+      @collapse.activate()
 
-
-  transitionComplete: (markup, element) ->
-    @render(markup)
-    @insertAfter(element)
-    @collapse.activate()
+    return complete() unless @collapse.activated
+    $.once(@panel, "Collapse:remove", complete)
+    @collapse.deactivate()
 

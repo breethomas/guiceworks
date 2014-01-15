@@ -22,12 +22,9 @@ class guiceworks.Application
     system.notify("Application:startup")
     system.notify("Application:startupComplete")
 
-## -----------
 
 window.$ = window.poma unless window.$
 guiceworks.app = new guiceworks.Application
 guiceworks.app.startup()
 
-# guiceworks.bindable = new Bindable().bindAll()
-# new guiceworks.MediaQueryMonitor
 
