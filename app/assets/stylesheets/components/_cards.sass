@@ -2,8 +2,9 @@
   position: relative
   height: 18.375rem
   user-select: none
-  cursor: default
+  cursor: pointer
   outline: 1px dotted blue
+  overflow: hidden
 
 .card__header
   position: absolute
@@ -13,11 +14,18 @@
   bottom: 0
   padding: 1rem
 
-.title
-  font-weight: 100
-  line-height: 1
+.card.active .card__header
+  color: white
 
-.card.active .title
+%card-standard-title
+  font-size: rem(40)
+  color: #6d6e70
+
+%card-standard-subtitle
+  color: #d0d2d3
+  margin-top: 0.5rem
+
+%card-active-title-color
   color: white
 
 
@@ -26,21 +34,42 @@
   background-color: #0d0d0d
 
 .card__client .title
-  font-size: rem(40)
-  color: #6d6e70
+  @extend %card-standard-title
+
+.card__client .subtitle
+  @extend %card-standard-subtitle
+
+.card__client.active .title,
+.card__client.active .subtitle
+  @extend %card-active-title-color
 
 
 // Case Study
 .card__study
-  background-color: #1f1f1f
+  background: #1f1f1f image-url('fpo/fpo-tile.jpg') no-repeat 0 0
+  background-size: cover
+
+.card__study:before
+  border-bottom: 19rem solid #1f1f1f
+  border-left: 23rem solid transparent
+  content: ""
+  position: absolute
+  bottom: 0
+  right: 0
 
 .card__study .card__header
   top: auto
   left: auto
 
 .card__study .title
-  font-size: rem(40)
-  color: #6d6e70
+  @extend %card-standard-title
+
+.card__study .subtitle
+  @extend %card-standard-subtitle
+
+.card__study.active .title,
+.card__study.active .subtitle
+  @extend %card-active-title-color
 
 
 // Skill
@@ -48,11 +77,26 @@
   background-color: $pink
   text-align: center
 
+.card__skill .card__header
+  top: 44%
+  transform: translateY(-44%)
+
 .card__skill .title
   font-size: rem(24)
   color: #990258
 
+.card__icon
+  @extend %transition-color
+  @extend .guicicon
+  font-size: 7rem
+  color: #990258
 
+.card__skill.active .title,
+.card__skill.active .card__icon
+  @extend %card-active-title-color
+
+
+// z-index == number of cards in a row
 #mq_monitor
   @extend %hidden
   position: absolute

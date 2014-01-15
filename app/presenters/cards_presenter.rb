@@ -5,38 +5,23 @@ class CardsPresenter
 
   def tiles
     [
-      { type: 'client', title: 'Client Name' },
-      { type: 'study',  title: 'Client' },
-      { type: 'client', title: 'Client Name' },
-      { type: 'skill',  title: 'User Experience' },
-      { type: 'study',  title: 'Client' },
-      { type: 'skill',  title: 'User Experience' },
-      { type: 'study',  title: 'Client' },
-      { type: 'client', title: 'Client Name' },
-      { type: 'client', title: 'Client Name' },
-      { type: 'study',  title: 'Client' },
-      { type: 'client', title: 'Client Name' },
-      { type: 'skill',  title: 'User Experience' },
-      { type: 'study',  title: 'Client' },
-      { type: 'skill',  title: 'User Experience' },
-      { type: 'study',  title: 'Client' },
-      { type: 'client', title: 'Client Name' }
+      { type: 'client', title: 'Client Name',      subtitle: 'Service Offering, Another Service, Third Service' },
+      { type: 'study',  title: 'Client',           subtitle: 'Service Offering, Another Service' },
+      { type: 'client', title: 'Client Name',      subtitle: 'Service Offering, Another Service' },
+      { type: 'skill',  title: 'User Experience',  icon:     'user-experience' },
+      { type: 'study',  title: 'Client',           subtitle: 'Service Offering, Another Service' },
+      { type: 'skill',  title: 'Creative Concept', icon:     'creative-concept' },
+      { type: 'study',  title: 'Client',           subtitle: 'Service Offering, Another Service' },
+      { type: 'client', title: 'Client Name',      subtitle: 'Service Offering, Another Service' },
+      { type: 'client', title: 'Client Name',      subtitle: 'Service Offering, Another Service' },
+      { type: 'study',  title: 'Client',           subtitle: 'Service Offering, Another Service' },
+      { type: 'client', title: 'Client Name',      subtitle: 'Service Offering, Another Service' },
+      { type: 'skill',  title: 'User Interface',   icon:     'user-interface' },
+      { type: 'study',  title: 'Client',           subtitle: 'Service Offering, Another Service' },
+      { type: 'skill',  title: 'Graphic Design',   icon:     'graphic-design' },
+      { type: 'study',  title: 'Client',           subtitle: 'Service Offering, Another Service' },
+      { type: 'client', title: 'Client Name',      subtitle: 'Service Offering, Another Service' }
     ]
-  end
-
-
-  def type(card)
-    card[:type]
-  end
-
-
-  def title(card)
-    card[:title]
-  end
-
-
-  def id(card, index)
-    "#{title(card).gsub(/\s+/, '_').downcase}_#{index}".underscore
   end
 
 end

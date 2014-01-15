@@ -63,13 +63,28 @@ a:focus
   font-size: rem(60)
 
 .heading--sub
+  font-family: $serif-family
   font-size: rem(15)
+  font-style: italic
   font-weight: normal
 
 
 .heading--masthead
   @extend %heading
   font-size: rem(48)
+
+.title
+  @extend %transition-color
+  font-weight: 100
+  line-height: 1
+
+.subtitle
+  @extend %transition-color
+  font-family: $serif-family
+  font-size: 0.875rem
+  font-style: italic
+  font-weight: normal
+
 
 @media(min-width:45em)
   .heading--masthead

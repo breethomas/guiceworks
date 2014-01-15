@@ -6,27 +6,32 @@
     = render partial: "main/masthead_copy"
 
 
-
 %nav#cards.cards
   -(@cards.tiles).each_with_index do |card, i|
     :ruby
-      id = @cards.id(card, i)
-      type = @cards.type(card)
-      title = @cards.title(card)
+      presenter = CardPresenter.new(card)
+      id = presenter.id(i)
+      type = presenter.type
+      title = presenter.title
 
     %div.card(id="card_#{id}" class="card__#{type}" data-index="#{i}" data-id="#{id}")
       %header.card__header
+        - if type == 'skill'
+          %div.card__icon(class="guicicon--#{presenter.icon}")
         %h3.title= title
-        %h3.title= id
+        - unless type == 'skill'
+          %h3.subtitle= presenter.subtitle
 
       %div.js_panel_contents.hidden
         %article.pane(id="pane_#{id}" class="pane__#{type}" data-index="#{i}" data-id="#{id}")
+          - if type == 'skill'
+            %div.panel__icon(class="guicicon--#{presenter.icon}")
           %header.pane__header
             %h1.heading #{title} #{i}
             %h2.heading--sub Service Offering, Another Service, Third Service
             %p <strong>Challenge:</strong> #{ipsum(4)}
             %p <strong>Solution:</strong> #{ipsum(4)}
-          %div.panel__figures
+          %div.pane__figures
             -['#f1f1f2', '#e6e7e8', '#f1f1f2', '#e6e7e8'].each do |bgc|
               %div.fpo(style="background-color: #{bgc};")<>
 
@@ -34,5 +39,5 @@
 %section#panel.panel.js-collapse
   %div.panel__toolbar
     %button#panel_dismiss.panel__dismiss.guicicon.guicicon--x(href="#panel")
-  %div#panel_container.pane__container
+  %div#pane_container.pane__container
 

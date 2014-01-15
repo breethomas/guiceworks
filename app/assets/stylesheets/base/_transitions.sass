@@ -1,11 +1,14 @@
 %transition-all
-  transition: all $speed ease
+  transition: all $speed $easing
 
 %transition-transform
-  transition: transform $speed $ease-in-out-quart
+  transition: transform $speed $easing
 
 %transition-transform-opacity
-  transition: transform $speed $ease-in-out-quart, opacity $speed $ease-in-out-quart
+  transition: transform $speed $easing, opacity $speed $easing
+
+%transition-color
+  transition: color $speed
 
 %transition-height
   transition: height $speed $ease-in-out-quart

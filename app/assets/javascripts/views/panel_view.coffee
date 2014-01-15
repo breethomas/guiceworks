@@ -3,7 +3,7 @@ class guiceworks.views.PanelView
 
   setup: ->
     @panel = document.getElementById('panel')
-    @container = document.getElementById('panel_container')
+    @container = document.getElementById('pane_container')
     @insert_after_element = null
 
 
