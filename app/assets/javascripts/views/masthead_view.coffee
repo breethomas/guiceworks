@@ -2,7 +2,6 @@ class guiceworks.views.MastheadView
   system: `undefined` # injected
 
   setup: ->
-    console?.log 'MastheadView.setup'
     @collapse = null
 
 

@@ -2,7 +2,6 @@ class guiceworks.views.CardsView
   system: `undefined` # injected
 
   setup: ->
-    console?.log 'CardsView.setup'
     @el = document.getElementById('cards')
     @cards = @el.querySelectorAll('.card')
     @addListeners()
@@ -12,14 +11,14 @@ class guiceworks.views.CardsView
     @system.notify('CardsView:receivedCards', @cards)
 
 
-  setActive: (card) ->
-    item.classList.remove('active') for item in @cards
-    card.classList.add('active')
-
-
   activate: (card) ->
     index = parseInt(card.dataset.index, 10)
     @system.notify('CardsView:indexActivated', index)
+
+
+  setActive: (card) ->
+    item.classList.remove('active') for item in @cards
+    card.classList.add('active')
 
 
   addListeners: ->

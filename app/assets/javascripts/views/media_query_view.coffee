@@ -2,7 +2,6 @@ class guiceworks.views.MediaQueryView
   system: `undefined` # injected
 
   setup: ->
-    console?.log 'MediaQueryView.setup'
     @el = @create()
     @num_columns = null
     @addListeners()

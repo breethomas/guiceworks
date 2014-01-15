@@ -19,12 +19,23 @@
   background-color: white
   position: relative
 
+.pane__container
+  @extend %transition-transform-opacity
+  position: relative
+.pane__container.hide
+  transform: translateX(-100%)
+  opacity: 0
+.pane__container.show
+  transform: translateX(100%)
+  opacity: 0
+
 .pane
   overflow-x: scroll
   -webkit-overflow-scrolling: touch
   font-size: 0
   white-space: nowrap
   padding: 4rem 0
+
 
 .pane__header,
 .panel__figures

@@ -2,14 +2,13 @@ class guiceworks.models.CardsModel
   system: `undefined` # injected
 
   setup: ->
-    console?.log 'CardsModel.setup'
     @index = null
     @cards = null
     @num_columns = null
 
 
   setNumberOfColumns: (@num_columns) ->
-    @system.notify('CardsModel:insertAfter', @getLastElementInRow(@index))
+    @system.notify('CardsModel:insertAfter', @getLastElementInRow())
 
 
   setCards: (@cards) ->
@@ -17,9 +16,8 @@ class guiceworks.models.CardsModel
 
 
   setActivatedIndex: (@index) ->
-    @system.notify('CardsModel:setActive', @cards[@index])
-    @system.notify('CardsModel:panelData', @getPanelData(@index))
-    @system.notify('CardsModel:insertAfter', @getLastElementInRow(@index))
+    @system.notify('CardsModel:setActiveCard', @cards[@index])
+    @system.notify('CardsModel:setActivePanel', @getPanelData(), @getLastElementInRow())
 
 
   getRow: ->
