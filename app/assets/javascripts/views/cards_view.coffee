@@ -16,9 +16,21 @@ class guiceworks.views.CardsView
     @system.notify('CardsView:indexActivated', index)
 
 
+  deactivate: (card) ->
+    @system.notify('CardsView:indexDeactivated')
+
+
   setActive: (card) ->
-    item.classList.remove('active') for item in @cards
+    @deactivateAll()
     card.classList.add('active')
+
+
+  setDeactive: ->
+    @deactivateAll()
+
+
+  deactivateAll: ->
+    item.classList.remove('active') for item in @cards
 
 
   addListeners: ->
@@ -33,5 +45,6 @@ class guiceworks.views.CardsView
     e.preventDefault()
     card = if e.target.classList.contains('card') then e.target else $.parentSelector(e.target, '.card')
     return unless card
-    @activate(card)
+    return @activate(card) unless card.classList.contains('active')
+    @deactivate(card)
 

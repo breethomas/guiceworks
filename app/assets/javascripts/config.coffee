@@ -30,9 +30,14 @@ class guiceworks.Config
 
     @system.mapHandler('CardsView:receivedCards', 'cardsModel', 'setCards')
     @system.mapHandler('CardsView:indexActivated', 'cardsModel', 'setActivatedIndex')
+    @system.mapHandler('CardsView:indexDeactivated', 'cardsModel', 'setDeactivatedIndex')
+    @system.mapHandler('PanelView:panelClosed', 'cardsModel', 'setDeactivatedIndex')
+
 
     @system.mapHandler('CardsModel:setActiveCard', 'cardsView', 'setActive')
     @system.mapHandler('CardsModel:setActivePanel', 'panelView', 'setActive')
+    @system.mapHandler('CardsModel:setDeactiveCard', 'cardsView', 'setDeactive')
+    @system.mapHandler('CardsModel:setDeactiveCard', 'panelView', 'setDeactive')
     @system.mapHandler('CardsModel:insertAfter', 'panelView', 'insertAfter')
 
 

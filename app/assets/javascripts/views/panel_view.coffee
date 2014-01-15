@@ -9,7 +9,7 @@ class guiceworks.views.PanelView
 
   initialize: ->
     @collapse = new guiceworks.components.Collapse(@panel)
-    $.on(document.getElementById('panel_dismiss'), 'click', => @collapse.deactivate())
+    @addListeners()
 
 
   setActive: (markup, element) ->
@@ -17,10 +17,18 @@ class guiceworks.views.PanelView
     @transition(markup, element)
 
 
+  setDeactive: ->
+    @closePanel()
+
+
   insertAfter: (element) ->
     return if element is @insert_after_element
     @insert_after_element = element
     $.insertAfter(@panel, @insert_after_element)
+
+
+  closePanel: ->
+    @collapse.deactivate()
 
 
   render: (markup) ->
@@ -45,4 +53,8 @@ class guiceworks.views.PanelView
     return complete() unless @collapse.activated
     $.once(@panel, "Collapse:remove", complete)
     @collapse.deactivate()
+
+
+  addListeners: ->
+    $.on(document.getElementById('panel_dismiss'), 'click', => @system.notify('PanelView:panelClosed'))
 

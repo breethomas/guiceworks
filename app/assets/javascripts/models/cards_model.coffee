@@ -21,6 +21,10 @@ class guiceworks.models.CardsModel
     @system.notify('CardsModel:setActivePanel', @getPanelData(), @getLastElementInRow())
 
 
+  setDeactivatedIndex: (@index=null) ->
+    @system.notify('CardsModel:setDeactiveCard')
+
+
   getRow: ->
     Math.floor(@index / @num_columns)
 

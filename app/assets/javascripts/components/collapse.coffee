@@ -45,4 +45,3 @@ class guiceworks.components.Collapse
       return @target.addEventListener(probe.transitionend, complete, false)
     complete()
 
-
