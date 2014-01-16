@@ -2,11 +2,18 @@
 Pink.
 
 ## WIP
-- [ ] Meta program in the images
-- [ ] Cleanup the rubies
-- [ ] Add FPO images and lazy load those jewels
-- [ ] Cleanup the behaviors
-- [ ] Fix the bug with the very last card trigger
-- [ ] Rock the correct fonts
-- [ ] Document how to update content in the site
+- Fix the bug with the very last card trigger
+- Rock the correct fonts
+- Add a staging site
+- Test on some browsers
+- Get real content rolling
+
+## Adding New Cards
+- Add a card object to `#tiles` in [CardsPresenter](app/presenters/cards_presenter.rb)
+- Change all the things
+- Drop a markdown file in the [partial](app/views/main/partials) folder &mdash; *Must have the same name as* `pathname`
+- Drop in the [images](app/assets/images) &mdash; *crush them with [ImageOptim first!](http://imageoptim.com/)*
+- Make sure the array of image paths in the [CardsPresenter](app/presenters/cards_presenter.rb) match the ones just crushed
+- There's also a [markdown file](app/views/main/partials/_masthead_copy.html.md) for the masthead area
+- Ship it and roll a doobie
 
