@@ -2,7 +2,6 @@
 Pink.
 
 ## WIP
-- [ ] Meta program in the content markdown files
 - [ ] Meta program in the images
 - [ ] Cleanup the rubies
 - [ ] Add FPO images and lazy load those jewels

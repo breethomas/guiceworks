@@ -3,7 +3,7 @@
   %h2.heading--masthead A fight to rid the world of poor design.
   %button#about_trigger.guicicon.guicicon--arrow--down(href="#about")
   %div#about.masthead__content.markdown.js-collapse
-    = render partial: "main/masthead_copy"
+    = render partial: "main/partials/masthead_copy"
 
 
 %nav#cards.cards
@@ -12,6 +12,7 @@
       presenter = CardPresenter.new(card)
       id = presenter.id(i)
       type = presenter.type
+      pathname = presenter.pathname
       title = presenter.title
       bgi = presenter.background_image? ? "background-image: url(#{asset_path(presenter.background_image)});" : nil
 
@@ -27,11 +28,10 @@
         %article.pane(id="pane_#{id}" class="pane__#{type}" data-index="#{i}" data-id="#{id}")
           - if presenter.icon?
             %div.panel__icon(class="guicicon--#{presenter.icon}")
+
           %header.pane__header.markdown
-            %h1 #{title} #{i}
-            %h2 Service Offering, Another Service, Third Service
-            %p <strong>Challenge:</strong> #{ipsum(4)}
-            %p <strong>Solution:</strong> #{ipsum(4)}
+            = render partial: "main/partials/#{pathname}"
+
           %div.pane__figures
             -['#f1f1f2', '#e6e7e8', '#f1f1f2', '#e6e7e8'].each do |bgc|
               %div.fpo(style="background-color: #{bgc};")<>
