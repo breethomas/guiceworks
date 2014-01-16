@@ -2,12 +2,12 @@
 Pink.
 
 ## WIP
-- [ ] Cleanup all of the styles
-- [ ] Break out each of the cards/panel markups into a partial?
-- [ ] Need to supply a case study card with a background image
-- [ ] Meta program in the content markdown files and image directories
+- [ ] Meta program in the content markdown files
+- [ ] Meta program in the images
+- [ ] Cleanup the rubies
 - [ ] Add FPO images and lazy load those jewels
-- [ ] Cleanup all of the behaviors
+- [ ] Cleanup the behaviors
 - [ ] Fix the bug with the very last card trigger
 - [ ] Rock the correct fonts
+- [ ] Document how to update content in the site
 

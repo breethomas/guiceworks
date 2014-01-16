@@ -13,18 +13,19 @@
       id = presenter.id(i)
       type = presenter.type
       title = presenter.title
+      bgi = presenter.background_image? ? "background-image: url(#{asset_path(presenter.background_image)});" : nil
 
-    %div.card(id="card_#{id}" class="card__#{type}" data-index="#{i}" data-id="#{id}")
+    %div.card(id="card_#{id}" class="card__#{type}" data-index="#{i}" data-id="#{id}" style="#{bgi}")
       %header.card__header
-        - if type == 'skill'
+        - if presenter.icon?
           %div.card__icon(class="guicicon--#{presenter.icon}")
         %h3.title= title
-        - unless type == 'skill'
+        - if presenter.subtitle?
           %h3.subtitle= presenter.subtitle
 
       %div.js_panel_contents.hidden
         %article.pane(id="pane_#{id}" class="pane__#{type}" data-index="#{i}" data-id="#{id}")
-          - if type == 'skill'
+          - if presenter.icon?
             %div.panel__icon(class="guicicon--#{presenter.icon}")
           %header.pane__header
             %h1.heading #{title} #{i}
