@@ -6,6 +6,7 @@ Pink.
 - Rock the correct fonts
 - Add a staging site
 - Test on some browsers
+- Setup Cloudinary on production
 - Get real content rolling
 
 ## Adding New Cards
