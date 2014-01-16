@@ -14,9 +14,10 @@
       type = presenter.type
       pathname = presenter.pathname
       title = presenter.title
-      bgi = presenter.background_image? ? "background-image: url(#{asset_path(presenter.background_image)});" : nil
+      card_image = presenter.card_image? ? "background-image: url(#{asset_path(presenter.card_image)});" : nil
+      images = presenter.images
 
-    %div.card(id="card_#{id}" class="card__#{type}" data-index="#{i}" data-id="#{id}" style="#{bgi}")
+    %div.card(id="card_#{id}" class="card__#{type}" data-index="#{i}" data-id="#{id}" style="#{card_image}")
       %header.card__header
         - if presenter.icon?
           %div.card__icon(class="guicicon--#{presenter.icon}")
@@ -32,9 +33,10 @@
           %header.pane__header.markdown
             = render partial: "main/partials/#{pathname}"
 
-          %div.pane__figures
-            -['#f1f1f2', '#e6e7e8', '#f1f1f2', '#e6e7e8'].each do |bgc|
-              %div.fpo(style="background-color: #{bgc};")<>
+          :ruby
+            imgs = images.map { |img| image_url(img) }
+
+          %div.pane__figures(data-imgs="#{imgs.join(',')}")
 
 
 %section#panel.panel.js-collapse

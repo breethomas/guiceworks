@@ -1,7 +1,7 @@
 class MainController < ApplicationController
 
   def index
-    @cards = CardsPresenter.new
+    @cards ||= CardsPresenter.new
   end
 
 end

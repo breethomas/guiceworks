@@ -20,12 +20,12 @@ class CardPresenter
     "#{title.gsub(/\s+/, '_').downcase}_#{index}".underscore
   end
 
-  def background_image
-    @card[:image]
+  def card_image
+    @card[:card_image]
   end
 
-  def background_image?
-    background_image
+  def card_image?
+    card_image
   end
 
   def icon
@@ -42,6 +42,10 @@ class CardPresenter
 
   def subtitle?
     subtitle
+  end
+
+  def images
+    @card[:images]
   end
 
 end

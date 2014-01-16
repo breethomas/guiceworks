@@ -31,11 +31,19 @@ class guiceworks.views.PanelView
     @collapse.deactivate()
 
 
+  loadImages: (markup="") ->
+    figures = @container.querySelector('.pane__figures')
+    images = figures.dataset.imgs.split(',')
+    markup += """<img src="#{image}"/>""" for image in images
+    figures.innerHTML = markup
+
+
   render: (markup) ->
     hide = =>
       @container.innerHTML = markup
       @container.classList.remove('hide')
       @container.classList.add('show')
+      @loadImages()
     show = =>
       @container.classList.remove('show')
 
