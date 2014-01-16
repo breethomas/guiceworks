@@ -4,9 +4,9 @@ Pink.
 ## WIP
 - Fix the bug with the very last card trigger
 - Rock the correct fonts
-- Add a staging site
+- Tune the layouts for smaller devices
 - Test on some browsers
-- Setup Cloudinary on production
+- Setup Cloudinary for assets on production
 - Get real content rolling
 
 ## Adding New Cards
