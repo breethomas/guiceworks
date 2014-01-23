@@ -3,7 +3,6 @@ Pink.
 
 ## WIP
 - Add the footer in
-- Tune the layouts for smaller devices
 - Test out images for retina
 - Fix the bug with the very last card trigger
 - Test on some browsers

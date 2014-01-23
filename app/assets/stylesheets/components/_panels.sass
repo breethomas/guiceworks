@@ -35,12 +35,15 @@
 .panel__icon,
 .pane__header,
 .pane__figures
-  display: inline-block
   vertical-align: middle
   padding: 0 1rem
 
+.pane__header,
+.pane__figures
+  display: inline-block
+
 .pane__header
-  width: 26rem
+  width: 20rem
   white-space: normal
 
 .pane__figures
@@ -48,19 +51,23 @@
 
 .pane__figures img
   display: inline-block
-  vertical-align: middle
-
-.pane__skill .pane__header
-  width: 33rem
+  max-width: none
 
 .panel__icon
   @extend %transition-color
   @extend .guicicon
-  font-size: 11rem
+  display: none
   color: $pink
+  font-size: 11rem
 
-// .fpo
-  display: inline-block
-  width: 42rem
-  height: 26rem
+
+@media (min-width: 22em)
+  .pane__header
+    width: 26rem
+
+@media (min-width: 31em)
+  .pane__skill .pane__header
+    width: 33rem
+  .panel__icon
+    display: inline-block
 

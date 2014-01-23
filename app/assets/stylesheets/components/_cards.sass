@@ -13,20 +13,9 @@
   bottom: 0
   padding: 1rem
 
-.card.active .card__header
-  color: white
-
-%card-active-title-color
-  color: white
-
-
 // Client
 .card__client
   background-color: #0d0d0d
-
-.card__client.active .title,
-.card__client.active .subtitle
-  @extend %card-active-title-color
 
 
 // Case Study
@@ -46,10 +35,6 @@
   top: auto
   left: auto
   text-align: right
-
-.card__study.active .title,
-.card__study.active .subtitle
-  @extend %card-active-title-color
 
 
 // Skill
@@ -71,9 +56,13 @@
   font-size: 7rem
   color: #990258
 
-.card__skill.active .title,
-.card__skill.active .card__icon
-  @extend %card-active-title-color
+// Active states for a card
+.card.active .card__header,
+.card.active .title,
+.card.active .subtitle,
+.card.active .card__icon
+  color: white
+
 
 
 // z-index == number of cards in a row
