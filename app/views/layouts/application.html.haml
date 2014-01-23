@@ -13,9 +13,8 @@
     = csrf_meta_tag
 
   %body(role="document")
-    -# = render partial: "layouts/banner"
     %div.main(role="main")
       = yield
-    -# = render partial: "layouts/contentinfo"
+    = render partial: "layouts/contentinfo"
     = javascript_include_tag :application
 
