@@ -5,13 +5,10 @@
 
 %typeset
   font-size: rem(13)
+  font-weight: 200
 
 %typeset-block
   margin: 1em 0
-
-%serif-set
-  font-family: $serif-family
-  font-weight: normal
 
 %unstyled-list
   margin-left: 0
@@ -42,8 +39,7 @@ p
   @extend %typeset-block
 
 strong
-  font-weight: normal
-  color: $pink
+  font-weight: bold
 
 ol, ul, dl, dd
   margin: 0
@@ -67,9 +63,9 @@ a:focus
   font-size: rem(60)
 
 .heading--sub
-  @extend %serif-set
-  font-size: rem(15)
-  font-style: italic
+  color: #bbbdbf
+  font-size: rem(12)
+  text-transform: uppercase
 
 .heading--masthead
   @extend %heading
@@ -77,22 +73,25 @@ a:focus
 
 .title
   @extend %transition-color
+  color: #6d6e70
+  font-size: rem(40)
   font-weight: 100
   line-height: 1
 
 .subtitle
   @extend %transition-color
-  @extend %serif-set
-  font-size: 0.875rem
-  font-style: italic
+  margin-top: 0.5rem
+  color: #a6a8ab
+  font-size: rem(11)
+  text-transform: uppercase
 
 .markdown h1
   @extend .heading
 .markdown h2
   @extend .heading--sub
-.markdown p
-  @extend %serif-set
-  font-size: rem(13)
+.markdown strong
+  font-size: rem(12)
+  text-transform: uppercase
 
 
 @media(min-width:45em)

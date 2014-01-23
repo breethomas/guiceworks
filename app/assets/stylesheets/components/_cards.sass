@@ -16,14 +16,6 @@
 .card.active .card__header
   color: white
 
-%card-standard-title
-  font-size: rem(40)
-  color: #6d6e70
-
-%card-standard-subtitle
-  color: #d0d2d3
-  margin-top: 0.5rem
-
 %card-active-title-color
   color: white
 
@@ -31,12 +23,6 @@
 // Client
 .card__client
   background-color: #0d0d0d
-
-.card__client .title
-  @extend %card-standard-title
-
-.card__client .subtitle
-  @extend %card-standard-subtitle
 
 .card__client.active .title,
 .card__client.active .subtitle
@@ -59,12 +45,7 @@
 .card__study .card__header
   top: auto
   left: auto
-
-.card__study .title
-  @extend %card-standard-title
-
-.card__study .subtitle
-  @extend %card-standard-subtitle
+  text-align: right
 
 .card__study.active .title,
 .card__study.active .subtitle

@@ -2,9 +2,10 @@
 Pink.
 
 ## WIP
-- Fix the bug with the very last card trigger
-- Rock the correct fonts
+- Add the footer in
 - Tune the layouts for smaller devices
+- Test out images for retina
+- Fix the bug with the very last card trigger
 - Test on some browsers
 - Setup Cloudinary for assets on production
 - Get real content rolling
