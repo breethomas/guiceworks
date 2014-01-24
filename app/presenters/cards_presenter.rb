@@ -109,7 +109,7 @@ class CardsPresenter
         pathname: 'case_study',
         title: 'Inspirato',
         subtitle: 'Service Offering, Another Service',
-        card_image: 'tiles/Inspirato.jpg',
+        card_image: 'tiles/inspirato.jpg',
         images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
       },
 
