@@ -3,7 +3,6 @@ Pink.
 
 ## WIP
 - Fix the bug with the very last card trigger
-- Test out images for retina
 - Test on some browsers
 - Setup Cloudinary for assets on production
 - Get real content rolling
