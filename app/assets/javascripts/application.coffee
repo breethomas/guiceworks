@@ -4,7 +4,6 @@
 
 #= require ./config
 
-#= require_tree ./lib
 #= require_tree ./components
 #= require_tree ./models
 #= require_tree ./views

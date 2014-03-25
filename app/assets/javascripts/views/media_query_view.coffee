@@ -22,13 +22,11 @@ class guiceworks.views.MediaQueryView
 
 
   addListeners: ->
-    @debounced = $.debounce(@resized, 300)
-    window.addEventListener('resize', @debounced, false)
+    window.addEventListener('resize', @resized, false)
 
 
   removeListeners: ->
-    @debounced = null
-    window.removeEventListener('resize', @debounced, false)
+    window.removeEventListener('resize', @resized, false)
 
 
   resized: (e) =>
