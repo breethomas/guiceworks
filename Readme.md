@@ -11,7 +11,6 @@ Pink.
 - Done.
 
 ## Todo:
-- Fix the bug with the very last card trigger (MK)
 - Test on some browsers (MK)
 - Get real content in (Geoff)
 - Setup Cloudinary for assets on production (Jay)

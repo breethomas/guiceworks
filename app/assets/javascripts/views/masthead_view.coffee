@@ -1,7 +1,7 @@
 class guiceworks.views.MastheadView
   system: `undefined` # injected
 
-  setup: ->
+  setup: -> # noop
 
 
   initialize: ->

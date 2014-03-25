@@ -9,7 +9,6 @@
 #= require_tree ./views
 
 
-
 class guiceworks.Application
   startup: ->
     system = new dijon.System()
@@ -25,5 +24,4 @@ class guiceworks.Application
 window.$ = window.poma unless window.$
 guiceworks.app = new guiceworks.Application
 guiceworks.app.startup()
-
 

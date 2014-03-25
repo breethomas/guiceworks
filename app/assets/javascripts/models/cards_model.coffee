@@ -9,6 +9,7 @@ class guiceworks.models.CardsModel
 
 
   setNumberOfColumns: (@num_columns) ->
+    return unless @index
     @system.notify('CardsModel:insertAfter', @getLastElementInRow())
 
 
@@ -30,7 +31,10 @@ class guiceworks.models.CardsModel
 
 
   getLastIndexInRow: (row) ->
-    ((row + 1) * @num_columns) - 1
+    last = ((row + 1) * @num_columns) - 1
+    return @cards.length - 1 if last > @cards.length - 1
+    return 0 if last < 0
+    last
 
 
   getLastElementInRow: ->
