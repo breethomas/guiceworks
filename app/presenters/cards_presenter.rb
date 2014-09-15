@@ -50,9 +50,9 @@ class CardsPresenter
 
       {
         type: 'skill',
-        markdown: 'graphic_design',
-        title: 'Graphic Design',
-        icon: 'graphic-design',
+        markdown: 'branding',
+        title: 'Branding',
+        icon: 'creative-concept',
         images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
       },
 
@@ -94,9 +94,9 @@ class CardsPresenter
 
       {
         type: 'skill',
-        markdown: 'branding',
-        title: 'Branding',
-        icon: 'creative-concept',
+        markdown: 'graphic_design',
+        title: 'Graphic Design',
+        icon: 'graphic-design',
         images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
       },
 
