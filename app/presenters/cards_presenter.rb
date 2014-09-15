@@ -7,34 +7,11 @@ class CardsPresenter
     [
       {
         type: 'study',
-        markdown: 'case_study',
-        title: 'Roximity',
-        subtitle: 'Service Offering, Another Service',
-        card_image: 'tiles/roximity.jpg',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'client',
-        markdown: 'client',
-        title: 'Exercism',
-        subtitle: 'Service Offering, Another Service, Third Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      { type: 'skill',
-        markdown: 'user_interface',
-        title: 'User Interface',
-        icon: 'user-interface',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'client',
-        markdown: 'client',
-        title: 'Visit Mobile',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        markdown: 'cirrus',
+        title: 'Cirrus MD',
+        subtitle: 'UX, UI Design, Branding',
+        card_image: 'tiles/cirrus.jpg',
+        images: ['cirrus/C_01.jpg', 'cirrus/C_02.jpg', 'cirrus/C_03.jpg', 'cirrus/C_04.jpg', 'cirrus/C_05.jpg', 'cirrus/C_06.jpg', 'cirrus/C_07.jpg', 'cirrus/C_08.jpg']
       },
 
       {
@@ -47,70 +24,28 @@ class CardsPresenter
 
       {
         type: 'study',
-        markdown: 'case_study',
+        markdown: 'spring',
+        title: 'Spring',
+        subtitle: 'UX, UI Design, Branding',
+        card_image: 'tiles/spring.jpg',
+        images: ['spring/SM_01.jpg', 'spring/SM_02.jpg', 'spring/SM_03.jpg', 'spring/SM_04.jpg', 'spring/SM_05.jpg', 'spring/SM_06.jpg', 'spring/SM_07.jpg', 'spring/SM_08.jpg', 'spring/SM_09.jpg', 'spring/SM_10.jpg', 'spring/SM_11.jpg']
+      },
+
+      {
+        type: 'skill',
+        markdown: 'user_interface',
+        title: 'User Interface Design',
+        icon: 'user-interface',
+        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+      },
+
+      {
+        type: 'study',
+        markdown: 'qdoba',
         title: 'Qdoba',
-        subtitle: 'Service Offering, Another Service',
+        subtitle: 'UX, UI Design, Branding',
         card_image: 'tiles/qdoba.jpg',
-        images: ['panels/qdoba/qdoba-01.jpg', 'panels/qdoba/qdoba-02.jpg', 'panels/qdoba/qdoba-03.jpg', 'panels/qdoba/qdoba-04.jpg']
-      },
-
-      {
-        type: 'client',
-        markdown: 'client',
-        title: 'Visit Mobile',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'study',
-        markdown: 'case_study',
-        title: 'TopFan',
-        subtitle: 'Service Offering, Another Service',
-        card_image: 'fpo/fpo-tile.jpg',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'client',
-        markdown: 'client',
-        title: 'Callaway',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'client',
-        markdown: 'client',
-        title: 'eBags',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'study',
-        markdown: 'case_study',
-        title: 'CirrusMD',
-        subtitle: 'Service Offering, Another Service',
-        card_image: 'tiles/cirrus.jpg',
-        images: ['panels/cirrus/cirrus-01.jpg', 'panels/cirrus/cirrus-02.jpg', 'panels/cirrus/cirrus-03.jpg', 'panels/cirrus/cirrus-04.jpg']
-      },
-
-      {
-        type: 'client',
-        markdown: 'client',
-        title: '3Zero3',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'study',
-        markdown: 'case_study',
-        title: 'Inspirato',
-        subtitle: 'Service Offering, Another Service',
-        card_image: 'tiles/inspirato.jpg',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        images: ['qdoba/Q_01.jpg', 'qdoba/Q_02.jpg', 'qdoba/Q_03.jpg', 'qdoba/Q_04.jpg', 'qdoba/Q_05.jpg', 'qdoba/Q_06.jpg', 'qdoba/Q_07.jpg']
       },
 
       {
@@ -122,54 +57,65 @@ class CardsPresenter
       },
 
       {
-        type: 'client',
-        markdown: 'client',
-        title: 'LevelUp',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        type: 'study',
+        markdown: 'levelup',
+        title: 'Level Up',
+        subtitle: 'Branding',
+        card_image: 'tiles/levelup.jpg',
+        images: ['levelup/LU_01.jpg', 'levelup/LU_02.jpg', 'levelup/LU_03.jpg', 'levelup/LU_04.jpg', 'levelup/LU_05.jpg']
       },
 
       {
         type: 'study',
-        markdown: 'case_study',
-        title: 'Spring',
-        subtitle: 'Service Offering, Another Service',
-        card_image: 'tiles/spring.jpg',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
-      },
-
-      {
-        type: 'client',
-        markdown: 'client',
-        title: 'Poparuba',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        markdown: 'roximity',
+        title: 'Roximity',
+        subtitle: 'UX, UI Design',
+        card_image: 'tiles/roximity.jpg',
+        images: ['rox/R_01.jpg', 'rox/R_02.jpg', 'rox/R_03.jpg', 'rox/R_04.jpg', 'rox/R_05.jpg']
       },
 
       {
         type: 'study',
-        markdown: 'case_study',
-        title: 'Audi',
-        subtitle: 'Service Offering, Another Service',
-        card_image: 'tiles/audi.jpg',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        markdown: 'visit',
+        title: 'Visit Mobile',
+        subtitle: 'UX, UI Design',
+        card_image: 'tiles/visit.jpg',
+        images: ['visit/VM_01.jpg', 'visit/VM_02.jpg', 'visit/VM_03.jpg', 'visit/VM_04.jpg']
+      },
+
+      {
+        type: 'study',
+        markdown: 'topfan',
+        title: 'Top Fan',
+        subtitle: 'UX, UI Design, Branding',
+        card_image: 'tiles/topfan.jpg',
+        images: ['topfan/TF_01.jpg', 'topfan/TF_02.jpg', 'topfan/TF_03.jpg', 'topfan/TF_04.jpg', 'topfan/TF_05.jpg', 'topfan/TF_06.jpg']
       },
 
       {
         type: 'skill',
-        markdown: 'creative_concept',
-        title: 'Creative Concept',
+        markdown: 'branding',
+        title: 'Branding',
         icon: 'creative-concept',
         images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
       },
 
       {
-        type: 'client',
-        markdown: 'client',
-        title: 'Prima',
-        subtitle: 'Service Offering, Another Service',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        type: 'study',
+        markdown: 'useful',
+        title: 'Useful Systems',
+        subtitle: 'UX, UI Design, Branding',
+        card_image: 'tiles/useful.jpg',
+        images: ['useful/U_01.jpg', 'useful/U_02.jpg', 'useful/U_03.jpg', 'useful/U_04.jpg',  'useful/U_05.jpg']
       }
+
+#      {
+#        type: 'client',
+#        markdown: 'client',
+#        title: 'Prima',
+#        subtitle: 'Service Offering, Another Service',
+#        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+#      }
 
     ]
   end
