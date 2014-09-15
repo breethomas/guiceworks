@@ -16,6 +16,7 @@ group :production do
   gem 'yui-compressor'
   gem 'rails_12factor'
   gem 'rack-zippy'
+  gem 'unicorn'
 end
 
 group :development, :test do
