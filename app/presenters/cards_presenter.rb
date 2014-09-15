@@ -19,7 +19,7 @@ class CardsPresenter
         markdown: 'user_experience',
         title: 'User Experience',
         icon: 'user-experience',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        images: ['ux/UX_01.jpg', 'ux/UX_02.jpg', 'ux/UX_03.jpg', 'ux/UX_04.jpg']
       },
 
       {
@@ -53,7 +53,7 @@ class CardsPresenter
         markdown: 'branding',
         title: 'Branding',
         icon: 'creative-concept',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        images: ['branding/BRAND_01.jpg', 'branding/BRAND_02.jpg', 'branding/BRAND_03.jpg', 'branding/BRAND_04.jpg']
       },
 
       {
