@@ -12,7 +12,7 @@
       presenter = CardPresenter.new(card)
       id = presenter.id(i)
       type = presenter.type
-      pathname = presenter.pathname
+      markdown = presenter.markdown
       title = presenter.title
       card_image = presenter.card_image? ? "background-image: url(#{asset_path(presenter.card_image)});" : nil
       images = presenter.images
@@ -31,7 +31,7 @@
             %div.panel__icon(class="guicicon--#{presenter.icon}")
 
           %header.pane__header.markdown
-            = render partial: "main/partials/#{pathname}"
+            = render partial: "main/partials/#{markdown}"
 
           :ruby
             imgs = images.map { |img| image_url(img) }

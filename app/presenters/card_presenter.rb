@@ -8,8 +8,8 @@ class CardPresenter
     @card[:type]
   end
 
-  def pathname
-    @card[:pathname]
+  def markdown
+    @card[:markdown]
   end
 
   def title
