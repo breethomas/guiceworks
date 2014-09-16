@@ -6,20 +6,20 @@ class CardsPresenter
   def tiles
     [
       {
+        type: 'skill',
+        markdown: 'user_experience',
+        title: 'User Experience',
+        icon: 'user-experience',
+        images: ['ux/UX_01.jpg', 'ux/UX_02.jpg', 'ux/UX_03.jpg', 'ux/UX_04.jpg']
+      },
+
+      {
         type: 'study',
         markdown: 'cirrus',
         title: 'Cirrus MD',
         subtitle: 'UX, UI Design, Branding',
         card_image: 'tiles/cirrus.jpg',
         images: ['cirrus/C_01.jpg', 'cirrus/C_02.jpg', 'cirrus/C_03.jpg', 'cirrus/C_04.jpg', 'cirrus/C_05.jpg', 'cirrus/C_06.jpg', 'cirrus/C_07.jpg', 'cirrus/C_08.jpg']
-      },
-
-      {
-        type: 'skill',
-        markdown: 'user_experience',
-        title: 'User Experience',
-        icon: 'user-experience',
-        images: ['ux/UX_01.jpg', 'ux/UX_02.jpg', 'ux/UX_03.jpg', 'ux/UX_04.jpg']
       },
 
       {
@@ -36,7 +36,7 @@ class CardsPresenter
         markdown: 'user_interface',
         title: 'User Interface Design',
         icon: 'user-interface',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        images: ['ui/UI_01.jpg', 'ui/UI_02.jpg', 'ui/UI_03.jpg', 'ui/UI_04.jpg', 'ui/UI_05.jpg', 'ui/UI_06.jpg', 'ui/UI_07.jpg', 'ui/UI_08.jpg']
       },
 
       {
@@ -97,7 +97,7 @@ class CardsPresenter
         markdown: 'graphic_design',
         title: 'Graphic Design',
         icon: 'graphic-design',
-        images: ['fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg', 'fpo/fpo-panel-1.jpg', 'fpo/fpo-panel-2.jpg']
+        images: ['design/GD_01.jpg', 'design/GD_02.jpg', 'design/GD_03.jpg', 'design/GD_04.jpg', 'design/GD_05.jpg', 'design/GD_06.jpg']
       },
 
       {
