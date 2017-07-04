@@ -1,0 +1,8 @@
+// @flow
+
+export type PageProps = {
+  url: {
+    pathname: string,
+  },
+}
+
