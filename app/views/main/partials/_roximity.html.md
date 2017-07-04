@@ -1,3 +1,0 @@
-# Roximity 
-## UX, UI Design
-

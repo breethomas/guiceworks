@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-cd ./vendor/assets/
-component install --force
-cd -
