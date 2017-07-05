@@ -5,20 +5,20 @@ import SerifBold from './SerifBold'
 
 const style = css(
   { fontSize: 48 },
-  media2({ fontSize: 80 }),
+  media2({ fontSize: 74 }),
 )
 
 type Props = {
   tag?: string,
 }
 
-const Title = ({ tag, ...props }: Props) => (
+const Heading = ({ tag, ...props }: Props) => (
   <SerifBold className={style} tag={tag} {...props} />
 )
 
-Title.defaultProps = {
-  tag: 'h1',
+Heading.defaultProps = {
+  tag: 'h2',
 }
 
-export default Title
+export default Heading
 

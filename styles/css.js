@@ -5,10 +5,26 @@ type JSO = {
   [key: string]: string | number | null,
 }
 
-export { css }
+export default css
 
 export const media = (query: string, ...styles: Array<JSO>) => (
   css({ [`@media ${query}`]: styles })
+)
+
+export const media1 = (...styles: Array<JSO>) => (
+  css({ '@media (min-width: 32em)': styles })
+)
+
+export const media2 = (...styles: Array<JSO>) => (
+  css({ '@media (min-width: 48em)': styles })
+)
+
+export const media3 = (...styles: Array<JSO>) => (
+  css({ '@media (min-width: 64em)': styles })
+)
+
+export const media4 = (...styles: Array<JSO>) => (
+  css({ '@media (min-width: 80em)': styles })
 )
 
 export const parent = (selector: string, ...styles: Array<JSO>) => (
@@ -54,22 +70,4 @@ export const placeholder = (...styles: Array<JSO>) => (
 export const disabled = (...styles: Array<JSO>) => (
   modifier('[disabled]', ...styles)
 )
-
-// -------------------------------------
-
-// const minBreakS = '(min-width: 23em)' // 368  / 16 = 23em
-// const minBreakM = '(min-width: 48em)' // 768  / 16 = 48em
-// const minBreakL = '(min-width: 64em)' // 1024 / 16 = 64em
-
-// export const mediaS = (...styles: Array<JSO>) => (
-//   css({ [`@media ${minBreakS}`]: styles })
-// )
-
-// export const mediaM = (...styles: Array<JSO>) => (
-//   css({ [`@media ${minBreakM}`]: styles })
-// )
-
-// export const mediaL = (...styles: Array<JSO>) => (
-//   css({ [`@media ${minBreakL}`]: styles })
-// )
 

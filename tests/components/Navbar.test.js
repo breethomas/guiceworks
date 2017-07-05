@@ -11,7 +11,7 @@ describe('Navbar', () => {
   })
 
   it('sets up the correct navigation', () => {
-    expect(shallow(nav).find('a').at(0).text()).toEqual('<RocketIcon />')
+    expect(shallow(nav).find('a').at(0).text()).toEqual('<GuiceworksIcon />')
     expect(shallow(nav).find('a').at(1).text()).toEqual('Experience Design')
   })
 

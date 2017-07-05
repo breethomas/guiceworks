@@ -1,18 +1,11 @@
 // @flow
 import React from 'react'
-import { css } from '../styles/jss'
-import Base from './Base'
+import css from '../styles/css'
+import { maxWidthContainer } from '../styles/jso'
 
-const baseStyle = css({
-  width: '100%',
-  maxWidth: 1400,
-  marginRight: 'auto',
-  marginLeft: 'auto',
-})
+const style = css(maxWidthContainer)
 
-type Props = {}
-
-export default (props: Props) => (
-  <Base className={baseStyle} tagName="section" {...props} />
+export default (props: any) => (
+  <section className={style} {...props} />
 )
 

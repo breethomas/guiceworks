@@ -3,8 +3,11 @@
 import React from 'react'
 import Head from 'next/head'
 import { rehydrate } from 'glamor'
+import AppView from '../components/AppView'
+import FeatureDetection from '../components/FeatureDetection'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Progress from '../components/Progress'
+import View from '../components/View'
 
 // Adds server generated styles to glamor cache.
 // Has to run before any calls to glamor (load Layout first)
@@ -17,12 +20,13 @@ if (typeof window !== 'undefined') {
 type Props = {
   children?: React.Element<*>,
   hasNavbar?: boolean,
+  hasFooter?: boolean,
   pathname: string,
   title?: string,
 }
 
 const Layout = (props: Props) => (
-  <div>
+  <View>
     <Head>
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -31,17 +35,21 @@ const Layout = (props: Props) => (
       <link href="/static/favicon.ico" rel="shortcut icon" type="image/x-icon" />
       <link href="/static/favicon.svg" color="#000" rel="mask-icon" />
     </Head>
-    { props.hasNavbar && <Navbar pathname={props.pathname} /> }
-    <main>
-      {props.children}
-    </main>
-    <Progress />
-  </div>
+    <FeatureDetection />
+    <AppView>
+      { props.hasNavbar && <Navbar pathname={props.pathname} /> }
+      <main role="main">
+        {props.children}
+      </main>
+      { props.hasFooter && <Footer /> }
+    </AppView>
+  </View>
 )
 
 Layout.defaultProps = {
   children: null,
   hasNavbar: true,
+  hasFooter: true,
   title: 'Yo.',
 }
 

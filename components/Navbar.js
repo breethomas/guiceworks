@@ -1,54 +1,43 @@
 // @flow
 import React from 'react'
-import Link from 'next/link'
-import { css } from '../styles/jss'
-import { RocketIcon } from './Icons'
+import css, { media2 } from '../styles/css'
+import { maxWidthContainer } from '../styles/jso'
+import Icon from './Icons'
+import NavbarLink from './NavbarLink'
+import NavbarLogo from './NavbarLogo'
+import View from '../components/View'
 
-const navStyle = css({
-  position: 'sticky',
-  top: 0,
-  display: 'flex',
-  alignItems: 'center',
-  height: 160,
-  backgroundColor: '#f6f6f6',
-})
-
-const containmentStyle = css({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'flex-end',
-  width: '100%',
-  maxWidth: 1400,
-  marginRight: 'auto',
-  marginLeft: 'auto',
-})
-
-const linkStyle = css({
-  display: 'flex',
-  alignItems: 'center',
-  height: 36,
-  marginRight: 14,
-  fontSize: 14,
-})
-
-const activeLinkStyle = css(
-  { ...linkStyle },
-  { color: '#c80000' },
+const navStyle = css(
+  {
+    position: 'sticky',
+    top: 0,
+    display: 'flex',
+    alignItems: 'center',
+    minHeight: 140,
+    color: '#010101',
+    backgroundColor: '#fff',
+  },
+  media2({
+    minHeight: 160,
+  }),
 )
 
-const pushLeftStyle = css({
-  marginRight: 'auto',
-})
+const containmentStyle = css(
+  maxWidthContainer,
+  {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+)
 
 const links = [
-  { label: 'Experience Design', href: '/experience-design' },
-  { label: 'Interface Design', href: '/interface-design' },
-  { label: 'Brand Design', href: '/brand-design' },
-  { label: 'Graphic Design', href: '/graphic-design' },
-  { label: 'Front-end Engineering', href: '/front-end-engineering' },
+  { icon: 'ExperienceIcon', label: 'Experience Design', href: '/experience-design' },
+  { icon: 'InterfaceIcon', label: 'Interface Design', href: '/interface-design' },
+  { icon: 'BrandIcon', label: 'Brand Design', href: '/brand-design' },
+  { icon: 'GraphicDesignIcon', label: 'Graphic Design', href: '/graphic-design' },
+  { icon: 'FrontEndIcon', label: 'Front-end Engineering', href: '/front-end-engineering' },
 ]
-
-const isTestEnv = process.env.NODE_ENV !== 'test'
 
 type Props = {
   pathname: string,
@@ -56,19 +45,22 @@ type Props = {
 
 export default (props: Props) => (
   <nav className={navStyle}>
-    <div className={containmentStyle} >
-      <Link href="/" prefetch={isTestEnv} >
-        <a className={`${props.pathname === '/' ? activeLinkStyle : linkStyle} ${pushLeftStyle}`} >
-          <RocketIcon />
-        </a>
-      </Link>
+    <View className={containmentStyle} >
+      <NavbarLogo
+        href="/"
+        isActive={props.pathname === '/'}
+      />
       {links.map(link => (
-        // TODO: Have to toggle the prefetch because of: https://github.com/zeit/next.js/issues/1204
-        <Link href={link.href} key={`NBL${link.label}`} prefetch={isTestEnv} >
-          <a className={props.pathname === link.href ? activeLinkStyle : linkStyle}>{link.label}</a>
-        </Link>
+        <NavbarLink
+          href={link.href}
+          isActive={props.pathname === link.href}
+          key={`NBL${link.label}`}
+          title={link.label}
+        >
+          <Icon kind={link.icon} />
+        </NavbarLink>
       ))}
-    </div>
+    </View>
   </nav>
 )
 

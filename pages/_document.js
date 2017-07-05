@@ -18,6 +18,7 @@ const globalStyles = `
   a { color: inherit; background-color: transparent; -webkit-text-decoration-skip: objects; }
 `.replace(/\n/g, '')
 
+
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
     const page = renderPage()
@@ -48,4 +49,3 @@ export default class MyDocument extends Document {
     )
   }
 }
-
