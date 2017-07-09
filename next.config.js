@@ -9,7 +9,7 @@ module.exports = {
   webpack: (config) => {
     config.plugins.push(
       new webpack.DefinePlugin({
-        'process.env.FAKE_TOKEN': JSON.stringify(process.env.FAKE_TOKEN || 'xxx666xxx'),
+        'process.env.DOMAIN': JSON.stringify(process.env.DOMAIN || 'http://localhost:3000'),
       })
     )
     return config

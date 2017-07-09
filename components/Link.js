@@ -5,13 +5,18 @@ import Link from 'next/link'
 const isTestEnv = process.env.NODE_ENV !== 'test'
 
 type Props = {
+  as?: string,
   children: React.Element<*>,
   href: string,
 }
 
-export default({ children, href, ...props }: Props) => (
+const Component = ({ as, children, href, ...props }: Props) => (
   href && href.charAt(0) === '/' ?
-    <Link href={href} prefetch={isTestEnv}>
+    <Link
+      as={as}
+      href={href}
+      prefetch={isTestEnv}
+    >
       <a {...props} >
         {children}
       </a>
@@ -21,4 +26,10 @@ export default({ children, href, ...props }: Props) => (
       {children}
     </a>
 )
+
+Component.defaultProps = {
+  as: null,
+}
+
+export default Component
 

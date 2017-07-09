@@ -1,8 +1,45 @@
 // @flow
 
-export type PageProps = {
-  url: {
-    pathname: string,
+type UrlProps = {
+  pathname: string,
+  query?: {
+    id: string,
   },
+}
+
+export type PageProps = {
+  url: UrlProps,
+}
+
+export type ProjectProps = {
+  body: string,
+  id: string,
+  logo: string,
+  next: string,
+  prev: string,
+  title: string,
+}
+
+export type PageProjectProps = {
+  is404: boolean,
+  pageTitle: string,
+  project: ProjectProps,
+  projects: Array<ProjectProps>,
+  url: UrlProps,
+}
+
+export type ServiceProps = {
+  body: string,
+  icon: string,
+  id: string,
+  title: string,
+}
+
+export type PageServiceProps = {
+  is404: boolean,
+  pageTitle: string,
+  service: ServiceProps,
+  services: Array<ServiceProps>,
+  url: UrlProps,
 }
 

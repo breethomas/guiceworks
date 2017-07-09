@@ -32,11 +32,11 @@ const containmentStyle = css(
 )
 
 const links = [
-  { icon: 'ExperienceIcon', label: 'Experience Design', href: '/experience-design' },
-  { icon: 'InterfaceIcon', label: 'Interface Design', href: '/interface-design' },
-  { icon: 'BrandIcon', label: 'Brand Design', href: '/brand-design' },
-  { icon: 'GraphicDesignIcon', label: 'Graphic Design', href: '/graphic-design' },
-  { icon: 'FrontEndIcon', label: 'Front-end Engineering', href: '/front-end-engineering' },
+  { icon: 'ExperienceIcon', label: 'Experience Design', href: '/services?id=experience-design' },
+  { icon: 'InterfaceIcon', label: 'Interface Design', href: '/services?id=interface-design' },
+  { icon: 'BrandIcon', label: 'Brand Design', href: '/services?id=brand-design' },
+  { icon: 'GraphicDesignIcon', label: 'Graphic Design', href: '/services?id=graphic-design' },
+  { icon: 'FrontEndIcon', label: 'Front-end Engineering', href: '/services?id=front-end-engineering' },
 ]
 
 type Props = {

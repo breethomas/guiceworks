@@ -42,6 +42,7 @@ const activeStyle = css(
 export default ({ href, isActive, ...props }: Props) => (
   <Link
     className={`${style} ${isActive ? activeStyle : ''}`}
+    as={href.replace('?id=', '/')}
     href={href}
     {...props}
   />
