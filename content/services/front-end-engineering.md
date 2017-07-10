@@ -1,6 +1,6 @@
 ---
 title: Front-end Engineering
-icon: FrontEndIcon
+icon: front-end.svg
 ---
 
 # How it works.

@@ -1,6 +1,6 @@
 ---
 title: Brand Design
-icon: BrandIcon
+icon: brand-design.svg
 ---
 
 # Who you are.

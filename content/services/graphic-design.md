@@ -1,6 +1,6 @@
 ---
 title: Graphic Design
-icon: GraphicDesignIcon
+icon: graphic-design.svg
 ---
 
 # How you look.

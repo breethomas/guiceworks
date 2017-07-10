@@ -62,14 +62,14 @@ export default () => (
     <View className={contactStyle}>
       <View className={innerStyle}>
         <Title tag="h2">Contact.</Title>
-        <Copy>
+        <Copy isThin >
           For more information or work samples email us at <MailLink />
         </Copy>
       </View>
     </View>
     <View className={contentInfoStyle} role="contentinfo">
       <View className={innerStyle}>
-        <Copy isSmall >
+        <Copy isSmall isThin >
           <span>&copy;</span>
           <span>{` Copyright ${currentYear} Guiceworks INC All rights reserved.`}</span>
         </Copy>

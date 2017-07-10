@@ -41,26 +41,36 @@ const links = [
 
 type Props = {
   pathname: string,
+  id?: string,
 }
 
-export default (props: Props) => (
-  <nav className={navStyle}>
-    <View className={containmentStyle} >
-      <NavbarLogo
-        href="/"
-        isActive={props.pathname === '/'}
-      />
-      {links.map(link => (
-        <NavbarLink
-          href={link.href}
-          isActive={props.pathname === link.href}
-          key={`NBL${link.label}`}
-          title={link.label}
-        >
-          <Icon kind={link.icon} />
-        </NavbarLink>
-      ))}
-    </View>
-  </nav>
-)
+const Navbar = (props: Props) => {
+  const activePath = props.id ? `${props.pathname}?id=${props.id}` : props.pathname
+  return (
+    <nav className={navStyle}>
+      <View className={containmentStyle} >
+        <NavbarLogo
+          href="/"
+          isActive={activePath === '/'}
+        />
+        {links.map(link => (
+          <NavbarLink
+            href={link.href}
+            isActive={activePath === link.href}
+            key={`NBL${link.label}`}
+            title={link.label}
+          >
+            <Icon kind={link.icon} />
+          </NavbarLink>
+        ))}
+      </View>
+    </nav>
+  )
+}
+
+Navbar.defaultProps = {
+  id: null,
+}
+
+export default Navbar
 

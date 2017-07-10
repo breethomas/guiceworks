@@ -1,6 +1,6 @@
 ---
 title: Moon
-logo: moon.svg
+icon: moon.svg
 next: cirrusmd
 prev: nba
 ---

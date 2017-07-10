@@ -1,6 +1,6 @@
 ---
 title: Experience Design
-icon: ExperienceIcon
+icon: experience-design.svg
 ---
 
 # Why you exist.

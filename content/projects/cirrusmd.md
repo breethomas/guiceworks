@@ -1,6 +1,6 @@
 ---
 title: Cirrus MD
-logo: cirrusmd.svg
+icon: cirrusmd.svg
 next: forelinx
 prev: moon
 ---

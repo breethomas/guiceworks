@@ -53,7 +53,7 @@ export default class extends React.PureComponent {
   render() {
     const { is404, pageTitle, service, services, url } = this.props
     return (
-      <Layout pathname={url.pathname} title={pageTitle}>
+      <Layout pathname={url.pathname} query={url.query} title={pageTitle}>
         { is404 &&
           <div>404</div>
         }

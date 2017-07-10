@@ -1,6 +1,6 @@
 ---
 title: Forelinx
-logo: forelinx.svg
+icon: forelinx.svg
 next: denver-startup-week
 prev: cirrusmd
 ---

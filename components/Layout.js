@@ -22,6 +22,9 @@ type Props = {
   hasNavbar?: boolean,
   hasFooter?: boolean,
   pathname: string,
+  query?: {
+    id: string,
+  },
   title?: string,
 }
 
@@ -37,7 +40,7 @@ const Layout = (props: Props) => (
     </Head>
     <FeatureDetection />
     <AppView>
-      { props.hasNavbar && <Navbar pathname={props.pathname} /> }
+      { props.hasNavbar && <Navbar pathname={props.pathname} id={props.query && props.query.id} /> }
       <main role="main">
         {props.children}
       </main>
@@ -50,6 +53,7 @@ Layout.defaultProps = {
   children: null,
   hasNavbar: true,
   hasFooter: true,
+  query: null,
   title: 'Yo.',
 }
 

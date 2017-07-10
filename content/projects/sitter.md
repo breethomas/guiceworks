@@ -1,6 +1,6 @@
 ---
 title: Sitter
-logo: sitter.svg
+icon: sitter.svg
 next: access-mobile
 prev: denver-startup-week
 ---

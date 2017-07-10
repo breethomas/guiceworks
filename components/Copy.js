@@ -1,10 +1,12 @@
 // @flow
 import React from 'react'
 import css, { media2 } from '../styles/css'
-import SansSerif from './SansSerif'
+import SansRegular from './SansRegular'
+import SansThin from './SansThin'
 
 type Props = {
   isSmall?: boolean,
+  isThin?: boolean,
   tag?: string,
 }
 
@@ -30,16 +32,17 @@ const styleSmall = css(
   }),
 )
 
-const Copy = ({ isSmall, tag, ...props }: Props) => (
-  <SansSerif
-    className={isSmall ? styleSmall : style}
-    tag={tag}
-    {...props}
-  />
-)
+const Copy = ({ isSmall, isThin, tag, ...props }: Props) => {
+  const textProps = { className: isSmall ? styleSmall : style, tag }
+  return isThin ?
+    <SansThin {...textProps} {...props} />
+  :
+    <SansRegular {...textProps} {...props} />
+}
 
 Copy.defaultProps = {
   isSmall: false,
+  isThin: false,
   tag: 'p',
 }
 

@@ -1,6 +1,6 @@
 ---
 title: Denver Startup Week
-logo: denver-startup-week.svg
+icon: denver-startup-week.svg
 next: sitter
 prev: forelinx
 ---

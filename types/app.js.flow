@@ -14,7 +14,7 @@ export type PageProps = {
 export type ProjectProps = {
   body: string,
   id: string,
-  logo: string,
+  icon: string,
   next: string,
   prev: string,
   title: string,

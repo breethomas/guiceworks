@@ -1,6 +1,6 @@
 ---
 title: Interface Design
-icon: InterfaceIcon
+icon: interface-design.svg
 ---
 
 # How you interact.
