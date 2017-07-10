@@ -1,7 +1,7 @@
 ---
 title: Access Mobile
 icon: access-mobile.svg
-image: http://via.placeholder.com/600
+image: /static/images/access-mobile-thumb.jpg
 next: nba
 prev: sitter
 ---

@@ -1,7 +1,7 @@
 ---
 title: Cirrus MD
 icon: cirrusmd.svg
-image: http://via.placeholder.com/600
+image: /static/images/cirrusmd-thumb.jpg
 next: forelinx
 prev: moon
 ---
@@ -14,11 +14,12 @@ message and video chat. This second iteration is based on industry response and
 user feedback. 
 
 ## Experience Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
+![Alt text](/static/images/cirrusmd-1.jpg)
+![Alt text](/static/images/cirrusmd-2.jpg)
 
 ## Interface Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
+![Alt text](/static/images/cirrusmd-3.jpg)
+![Alt text](/static/images/cirrusmd-4.jpg)
+![Alt text](/static/images/cirrusmd-5.jpg)
+![Alt text](/static/images/cirrusmd-6.jpg)
 

@@ -1,7 +1,7 @@
 ---
 title: Forelinx
 icon: forelinx.svg
-image: http://via.placeholder.com/600
+image: /static/images/forelinx-thumb.jpg
 next: denver-startup-week
 prev: cirrusmd
 ---

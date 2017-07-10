@@ -1,7 +1,7 @@
 ---
 title: NBA
 icon: nba.svg
-image: http://via.placeholder.com/600
+image: http://via.placeholder.com/496/ffdc00
 next: moon
 prev: access-mobile
 ---
