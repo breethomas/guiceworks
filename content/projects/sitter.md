@@ -1,6 +1,7 @@
 ---
 title: Sitter
 icon: sitter.svg
+image: http://via.placeholder.com/600
 next: access-mobile
 prev: denver-startup-week
 ---

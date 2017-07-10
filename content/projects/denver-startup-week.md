@@ -1,6 +1,7 @@
 ---
 title: Denver Startup Week
 icon: denver-startup-week.svg
+image: http://via.placeholder.com/600
 next: sitter
 prev: forelinx
 ---

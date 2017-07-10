@@ -76,14 +76,26 @@ type Props = {
 
 export default ({ kind, ...props }: Props) => {
   switch (kind) {
-    case 'ArrowIcon': return <ArrowIcon {...props} />
-    case 'BrandIcon': return <BrandIcon {...props} />
-    case 'ExperienceIcon': return <ExperienceIcon {...props} />
-    case 'FrontEndIcon': return <FrontEndIcon {...props} />
-    case 'GraphicDesignIcon': return <GraphicDesignIcon {...props} />
-    case 'InterfaceIcon': return <InterfaceIcon {...props} />
+    case 'ArrowIcon':
+      return <ArrowIcon {...props} />
+    case 'BrandIcon':
+    case 'brand-design':
+      return <BrandIcon {...props} />
+    case 'ExperienceIcon':
+    case 'experience-design':
+      return <ExperienceIcon {...props} />
+    case 'FrontEndIcon':
+    case 'front-end':
+      return <FrontEndIcon {...props} />
+    case 'GraphicDesignIcon':
+    case 'graphic-design':
+      return <GraphicDesignIcon {...props} />
+    case 'InterfaceIcon':
+    case 'interface-design':
+      return <InterfaceIcon {...props} />
+    case 'GuiceworksIcon':
     default:
-    case 'GuiceworksIcon': return <GuiceworksIcon {...props} />
+      return <GuiceworksIcon {...props} />
   }
 }
 

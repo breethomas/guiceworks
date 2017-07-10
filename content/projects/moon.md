@@ -1,6 +1,7 @@
 ---
 title: Moon
 icon: moon.svg
+image: http://via.placeholder.com/600
 next: cirrusmd
 prev: nba
 ---

@@ -5,7 +5,8 @@ import { createSelector } from 'reselect'
 import { TITLE_PREFIX } from '../constants/en'
 import { servicesPath } from '../networking/api'
 import Layout from '../components/Layout'
-import Link from '../components/Link'
+import CardCollection from '../components/CardCollection'
+import ServiceCard from '../components/ServiceCard'
 import ServiceDetail from '../components/ServiceDetail'
 import type { PageServiceProps } from '../types/app.js.flow'
 
@@ -61,17 +62,11 @@ export default class extends React.PureComponent {
           <ServiceDetail service={service} />
         }
         { services && !is404 &&
-          <div style={{ display: 'flex', flexFlow: 'column wrap' }}>
+          <CardCollection>
             {services.map(serv => (
-              <Link
-                as={`/services/${serv.id}`}
-                href={`/services?id=${serv.id}`}
-                key={serv.title}
-              >
-                {serv.title}
-              </Link>
+              <ServiceCard service={serv} />
             ))}
-          </div>
+          </CardCollection>
         }
       </Layout>
     )

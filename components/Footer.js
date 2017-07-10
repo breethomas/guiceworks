@@ -13,7 +13,7 @@ const footerStyle = css(
     display: 'flex',
     flexFlow: 'column wrap',
     marginTop: 'auto',
-    backgroundColor: '#f1f1f1',
+    backgroundColor: '#fff',
     minHeight: 340,
   },
   media2({

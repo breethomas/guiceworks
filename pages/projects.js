@@ -5,7 +5,8 @@ import { createSelector } from 'reselect'
 import { TITLE_PREFIX } from '../constants/en'
 import { projectsPath } from '../networking/api'
 import Layout from '../components/Layout'
-import Link from '../components/Link'
+import CardCollection from '../components/CardCollection'
+import ProjectCard from '../components/ProjectCard'
 import ProjectDetail from '../components/ProjectDetail'
 import type { PageProjectProps } from '../types/app.js.flow'
 
@@ -61,17 +62,11 @@ export default class extends React.PureComponent {
           <ProjectDetail project={project} />
         }
         { projects && !is404 &&
-          <div style={{ display: 'flex', flexFlow: 'column wrap' }}>
+          <CardCollection>
             {projects.map(proj => (
-              <Link
-                as={`/projects/${proj.id}`}
-                href={`/projects?id=${proj.id}`}
-                key={proj.title}
-              >
-                {proj.title}
-              </Link>
+              <ProjectCard project={proj} />
             ))}
-          </div>
+          </CardCollection>
         }
       </Layout>
     )
