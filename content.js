@@ -29,7 +29,7 @@ subdirs.map((subdirname) => {
   }).filter(value => value !== null)
   const obj = { [subdirname]: node }
   const output = JSON.stringify(obj)
-  console.log(`Writing ./static/api/${subdirname}.json`)
+  console.log(`Writing ./static/api/${subdirname}.json`) // eslint-disable-line
   fs.writeFileSync(`./static/api/${subdirname}.json`, output)
   return obj
 })
@@ -49,5 +49,5 @@ const cards = cardIds.map(id => (
 const indexProps = Object.assign({}, indexParsed, { cards })
 const indexOutput = JSON.stringify(indexProps)
 fs.writeFileSync('./static/api/index.json', indexOutput)
-console.log('Writing ./static/api/index.json')
+console.log('Writing ./static/api/index.json') // eslint-disable-line
 
