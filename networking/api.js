@@ -7,4 +7,5 @@ const getAPIPath = (path: string) => (
 
 export const projectsPath = () => getAPIPath('projects')
 export const servicesPath = () => getAPIPath('services')
+export const indexPath = () => getAPIPath('index')
 

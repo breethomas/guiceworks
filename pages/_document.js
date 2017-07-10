@@ -13,7 +13,7 @@ const globalStyles = `
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   body { position: relative; margin: 0; overflow-x: hidden; background-color: #fff; }
-  ::selection { color: #fff; text-shadow: none; background: #000; }
+  ::selection { color: #fff; text-shadow: none; background: #010101; }
   h1, h2, h3, h4, h5, h6 { margin: 0; line-height: 1.25; }
   a { color: inherit; background-color: transparent; -webkit-text-decoration-skip: objects; }
 `.replace(/\n/g, '')

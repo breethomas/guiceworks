@@ -7,7 +7,21 @@ type UrlProps = {
   },
 }
 
+export type IndexCardProps = {
+  id: string,
+  icon?: string,
+  image?: string,
+  title: string,
+}
+
 export type PageProps = {
+  url: UrlProps,
+}
+
+export type PageIndexProps = {
+  body: string,
+  cards: Array<*>,
+  pageTitle: string,
   url: UrlProps,
 }
 

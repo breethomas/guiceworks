@@ -36,6 +36,8 @@ export default (props: Props) => (
         />
       </Header>
       <Markdown
+        hasAltHeading
+        hasLeadText
         source={props.project.body}
       />
     </Article>
