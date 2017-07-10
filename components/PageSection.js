@@ -1,9 +1,9 @@
 // @flow
 import React from 'react'
 import css from '../styles/css'
-import { maxWidthContainer } from '../styles/jso'
+import { maxWidthContent } from '../styles/jso'
 
-const style = css(maxWidthContainer)
+const style = css(maxWidthContent)
 
 export default (props: any) => (
   <section className={style} {...props} />

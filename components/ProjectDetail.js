@@ -1,11 +1,12 @@
 // @flow
 import React from 'react'
-import Markdown from 'react-markdown'
-import Article from '../components/Article'
-import ImageIcon from '../components/ImageIcon'
-import Link from '../components/Link'
-import PageSection from '../components/PageSection'
-import Title from '../components/Title'
+import css from '../styles/css'
+import Article from './Article'
+import Header from './Header'
+import ImageIcon from './ImageIcon'
+import Markdown from './Markdown'
+import Paddles from './Paddles'
+import PageSection from './PageSection'
 import type { ProjectProps } from '../types/app.js.flow'
 
 const path = '/static/icons/projects'
@@ -14,30 +15,29 @@ type Props = {
   project: ProjectProps,
 }
 
+const headerStyle = css({
+  marginBottom: 10,
+})
+
 export default (props: Props) => (
   <PageSection>
+    <Paddles
+      dir="projects"
+      nextLink={props.project.next}
+      prevLink={props.project.prev}
+    />
     <Article>
-      <ImageIcon
-        alt={props.project.title}
-        src={[path, props.project.icon].join('/')}
-        width={250}
-        height={90}
+      <Header className={headerStyle}>
+        <ImageIcon
+          alt={props.project.title}
+          src={[path, props.project.icon].join('/')}
+          width={250}
+          height={90}
+        />
+      </Header>
+      <Markdown
+        source={props.project.body}
       />
-      <Title>{props.project.title}</Title>
-      <Link
-        as={`/projects/${props.project.prev}`}
-        href={`/projects?id=${props.project.prev}`}
-      >
-        { props.project.prev }
-      </Link>
-      <span> :: </span>
-      <Link
-        as={`/projects/${props.project.next}`}
-        href={`/projects?id=${props.project.next}`}
-      >
-        { props.project.next }
-      </Link>
-      <Markdown source={props.project.body} />
     </Article>
   </PageSection>
 )

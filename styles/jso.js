@@ -10,7 +10,16 @@ export const animateRotate = css.keyframes('animateRotate', {
 
 export const maxWidthContainer = {
   width: '100%',
-  maxWidth: 1400,
+  maxWidth: 1800,
+  marginRight: 'auto',
+  marginLeft: 'auto',
+  paddingLeft: 20,
+  paddingRight: 20,
+}
+
+export const maxWidthContent = {
+  width: '100%',
+  maxWidth: 1210,
   marginRight: 'auto',
   marginLeft: 'auto',
   paddingLeft: 20,

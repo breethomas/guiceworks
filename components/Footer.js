@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import css, { media2 } from '../styles/css'
-import { maxWidthContainer } from '../styles/jso'
+import { maxWidthContent } from '../styles/jso'
 import Copy from './Copy'
 import Title from './Title'
 import View from './View'
@@ -37,14 +37,19 @@ const contentInfoStyle = css({
   minHeight: 85,
   marginTop: 'auto',
   color: '#fff',
-  backgroundColor: '#000',
+  backgroundColor: '#010101',
 })
 
 const innerStyle = css(
-  maxWidthContainer,
+  maxWidthContent,
 )
 
+const offColorStyle = css({
+  color: '#808080',
+})
+
 const mailStyle = css({
+  color: '#010101',
   borderBottom: '1px solid #4d4d4d',
   textDecoration: 'none',
 })
@@ -62,9 +67,11 @@ export default () => (
     <View className={contactStyle}>
       <View className={innerStyle}>
         <Title tag="h2">Contact.</Title>
-        <Copy isThin >
-          For more information or work samples email us at <MailLink />
-        </Copy>
+        <View className={offColorStyle}>
+          <Copy isThin >
+            For more information or work samples email us at <MailLink />
+          </Copy>
+        </View>
       </View>
     </View>
     <View className={contentInfoStyle} role="contentinfo">
