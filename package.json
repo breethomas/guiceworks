@@ -2,7 +2,7 @@
   "name": "Guiceworks",
   "description": "Web sites for guice.works",
   "homepage": "https://guice.works/",
-  "version": "6.6.7",
+  "version": "0.0.1",
   "license": "MIT",
   "engines": {
     "node": "8.1.2",
@@ -19,7 +19,9 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "body-parser": "1.17.2",
     "dotenv": "4.0.0",
+    "express": "4.15.3",
     "front-matter": "2.1.2",
     "glamor": "3.0.0-1",
     "glamor-server": "3.0.0-1",
