@@ -2,7 +2,7 @@
   "name": "Guiceworks",
   "description": "Web sites for guice.works",
   "homepage": "https://guice.works/",
-  "version": "6.6.6",
+  "version": "6.6.7",
   "license": "MIT",
   "engines": {
     "node": "8.1.2",
@@ -15,7 +15,8 @@
     "start": "NODE_ENV=production node server.js -p $PORT",
     "flow": "flow",
     "lint": "eslint ./",
-    "test": "jest"
+    "test": "jest",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "dotenv": "4.0.0",
