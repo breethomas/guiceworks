@@ -18,12 +18,13 @@ records and communicate with them via SMS.
 ## Brand Design
 ![Alt text](http://via.placeholder.com/1170x650)
 ![Alt text](http://via.placeholder.com/1170x650)
+![Alt text](http://via.placeholder.com/1170x650)
 
-## Experience Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
 
 ## Interface Design
+![Alt text](http://via.placeholder.com/1170x650)
+![Alt text](http://via.placeholder.com/1170x650)
+![Alt text](http://via.placeholder.com/1170x650)
 ![Alt text](http://via.placeholder.com/1170x650)
 ![Alt text](http://via.placeholder.com/1170x650)
 ![Alt text](http://via.placeholder.com/1170x650)

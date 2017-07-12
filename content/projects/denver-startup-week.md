@@ -8,15 +8,19 @@ prev: forelinx
 
 # Celebrating the entrepreneurial spirit.
 
-Lorem ipsum dolere sit amet nonummy consecuter adspecit nomen quid. Lorem ipsum
-dolere sit amet nonummy consecuter adspecit nomen quid. Lorem ipsum dolere sit
-amet nonummy consecuter adspecit nomen quid. Lorem ipsum dolere sit amet nonummy
-consecuter adspecit nomen quid. Lorem ipsum dolere sit amet nonummy consecuter
-adspecit nomen quid. Lorem ipsum dolere sit amet nonummy consecuter adspecit
-nomen quid. Lorem ipsum dolere sit amet nonummy consecuter adspecit nomen quid.
-Lorem ipsum dolere sit amet nonummy consecuter adspecit nomen quid.
+Denver Startup Week engaged Guiceworks to rebrand the event and extend that new
+brand into a stronger, more cohesive online and offline presence overall. An
+icon and color language that worked together with the DSW brand was created to
+define tracks, events and subject matter. The website was rebuilt from scratch
+to create a simplified, contextual overall experience for the user, both prior
+to and during the event.
+
+## Brand Design
+![Alt text](http://via.placeholder.com/1170x650)
+![Alt text](http://via.placeholder.com/1170x650)
 
 ## Experience Design
+![Alt text](http://via.placeholder.com/1170x650)
 ![Alt text](http://via.placeholder.com/1170x650)
 
 ## Interface Design

@@ -8,10 +8,14 @@ prev: moon
 
 # Telemedicine done right.
 
-New iteration of UX and UI design for CirrusMD, a mobile healthcare
-communication application that allows patients 24hr access to doctors via text
-message and video chat. This second iteration is based on industry response and
-user feedback. 
+CirrusMD is a mobile healthcare communication application that allows patients
+24hr access to doctors via text message and video chat. From initial brand
+design, strategy and concept of the product, user experience and user interface
+design we created the MVP product for CirrusMD back in 2012. After industry
+research, testing and iterating on the product, we created a new version of the
+UX and UI design based on industry response and user feedback. They have since
+grown and created an internal team and continue to refine their product and
+integrate with other healthcare systems.
 
 ## Experience Design
 ![Alt text](/static/images/cirrusmd-1.jpg)

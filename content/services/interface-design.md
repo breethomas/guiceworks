@@ -23,4 +23,3 @@ this point on some things, more accurate to make decision about. Prototype in
 context of UI design. UI always presented in prototype to get as “real” of
 experience as possible. Can test at this point on some things, more accurate to
 make decision about. 
-

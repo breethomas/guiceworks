@@ -45,8 +45,8 @@ we can identify major roadblocks in the experience early and at low cost.
 
 Here, we bring the sketch and user flows to life via higher fidelity and
 clickable wire frames. In some cases, we may layer on a bit of brand design just
-to make the experience feel dynamic enough to test legitimally with a set of
-potential users. The clickable protototype invokes a common ground for
+to make the experience feel dynamic enough to test legitimately with a set of
+potential users. The clickable prototype invokes a common ground for
 stakeholders, developers and designers to accurately communicate expectations
 and generate ideas on something that feels more like a “real product”.
 Prototyping leverages desktop, tablet and mobile presentations to fully vet
