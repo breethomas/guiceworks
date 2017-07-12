@@ -6,7 +6,7 @@ type State = {
   isHidden: boolean,
 }
 
-const style = css({ transition: 'opacity 0.4s' })
+const style = css({ transition: 'opacity 0.8s' })
 const hiddenStyle = css({ opacity: 0 })
 
 const classNames = isHidden => ([
