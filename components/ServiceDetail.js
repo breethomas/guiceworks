@@ -25,7 +25,7 @@ const headerStyle = css(
 
 export default (props: Props) => (
   <PageSection>
-    <Article>
+    <Article key={new Date()}>
       <Header className={headerStyle}>
         <ImageIcon
           alt={props.service.title}

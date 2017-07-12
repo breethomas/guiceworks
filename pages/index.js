@@ -45,7 +45,7 @@ export default class extends React.PureComponent {
     const { body, cards, pageTitle, url } = this.props
     return (
       <Layout pathname={url.pathname} query={url.query} title={pageTitle}>
-        <Article>
+        <Article key={new Date()}>
           <Header className={headerStyle}>
             <View style={{ maxWidth: 850 }}>
               <Markdown

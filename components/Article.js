@@ -1,7 +1,10 @@
 // @flow
 import React from 'react'
+import withFadeIn from './withFadeIn'
 
-export default (props: any) => (
+const Article = (props: any) => (
   <article {...props} />
 )
+
+export default withFadeIn(Article)
 

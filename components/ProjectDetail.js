@@ -26,7 +26,7 @@ export default (props: Props) => (
       nextLink={props.project.next}
       prevLink={props.project.prev}
     />
-    <Article>
+    <Article key={new Date()}>
       <Header className={headerStyle}>
         <ImageIcon
           alt={props.project.title}
