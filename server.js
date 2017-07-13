@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const { parse } = require('url')
 const next = require('next')
 const bodyParser = require('body-parser')
@@ -15,6 +16,7 @@ const matchServices = route('/services/:id')
 app.prepare()
 .then(() => {
   const server = express()
+  server.use(cors())
   server.use(bodyParser.json())
   server.use(bodyParser.urlencoded({ extended: true }))
 
