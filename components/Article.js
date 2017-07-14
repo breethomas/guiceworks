@@ -2,7 +2,11 @@
 import React from 'react'
 import withFadeIn from './withFadeIn'
 
-const Article = (props: any) => (
+type Props = {
+  isHidden: boolean,
+}
+
+const Article = ({ isHidden, ...props }: Props) => (
   <article {...props} />
 )
 

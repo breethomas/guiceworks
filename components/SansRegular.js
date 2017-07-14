@@ -2,8 +2,15 @@
 import React from 'react'
 import css from '../styles/css'
 
+css.fontFace({
+  fontFamily: 'Helvetica-Md',
+  fontStyle: 'normal',
+  fontWeight: 400,
+  src: 'url("/static/fonts/HelveticaNeueLTStd-Md.otf") format("opentype")',
+})
+
 const style = css({
-  fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+  fontFamily: 'Helvetica-Md, "Helvetica Neue", Helvetica, sans-serif',
   fontWeight: 400,
 })
 

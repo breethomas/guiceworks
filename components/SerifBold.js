@@ -2,15 +2,15 @@
 import React from 'react'
 import css from '../styles/css'
 
-const family = css.fontFace({
+css.fontFace({
   fontFamily: 'RNSCamelia-Bold',
   fontStyle: 'normal',
   fontWeight: 400,
-  src: 'local("RNSCamelia-Bold"), url("/static/fonts/RNSCamelia-Bold.otf") format("opentype")',
+  src: 'url("/static/fonts/RNSCamelia-Bold.otf") format("opentype")',
 })
 
 const style = css({
-  fontFamily: family,
+  fontFamily: 'RNSCamelia-Bold',
 })
 
 type Props = {

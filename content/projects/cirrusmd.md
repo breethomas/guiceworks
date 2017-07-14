@@ -1,7 +1,8 @@
 ---
 title: Cirrus MD
 icon: cirrusmd.svg
-image: /static/images/cirrusmd-thumb.jpg
+image: /static/images/CMD_home.jpg
+greybox: /static/images/CMD_grey-box.jpg
 next: forelinx
 prev: moon
 ---
@@ -9,7 +10,7 @@ prev: moon
 # Telemedicine done right.
 
 CirrusMD is a mobile healthcare communication application that allows patients
-24hr access to doctors via text message and video chat. From initial brand
+24hr access to doctors via text message and video chat.  From initial brand
 design, strategy and concept of the product, user experience and user interface
 design we created the MVP product for CirrusMD back in 2012. After industry
 research, testing and iterating on the product, we created a new version of the
@@ -18,12 +19,11 @@ grown and created an internal team and continue to refine their product and
 integrate with other healthcare systems.
 
 ## Experience Design
-![Alt text](/static/images/cirrusmd-1.jpg)
-![Alt text](/static/images/cirrusmd-2.jpg)
+![CirrusMD UX 01](/static/images/CMD_UX_01.jpg)
+![CirrusMD UX 02](/static/images/CMD_UX_02.jpg)
 
 ## Interface Design
-![Alt text](/static/images/cirrusmd-3.jpg)
-![Alt text](/static/images/cirrusmd-4.jpg)
-![Alt text](/static/images/cirrusmd-5.jpg)
-![Alt text](/static/images/cirrusmd-6.jpg)
+![CirrusMD iso](/static/images/CMD_iso.jpg)
+![CirrusMD UI 01](/static/images/CMD_UI_01.jpg)
+![CirrusMD UI 01](/static/images/CMD_UI_02.jpg)
 

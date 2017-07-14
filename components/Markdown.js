@@ -11,11 +11,25 @@ type Props = {
 
 const iconPath = '/static/icons/services'
 
-const serifBoldFamily = css.fontFace({
+css.fontFace({
   fontFamily: 'RNSCamelia-Bold',
   fontStyle: 'normal',
   fontWeight: 400,
-  src: 'local("RNSCamelia-Bold"), url("/static/fonts/RNSCamelia-Bold.otf") format("opentype")',
+  src: 'url("/static/fonts/RNSCamelia-Bold.otf") format("opentype")',
+})
+
+css.fontFace({
+  fontFamily: 'Helvetica-Md',
+  fontStyle: 'normal',
+  fontWeight: 400,
+  src: 'url("/static/fonts/HelveticaNeueLTStd-Md.otf") format("opentype")',
+})
+
+css.fontFace({
+  fontFamily: 'Helvetica-Th',
+  fontStyle: 'normal',
+  fontWeight: 400,
+  src: 'url("/static/fonts/HelveticaNeueLTStd-Th.otf") format("opentype")',
 })
 
 const brandIcon = {
@@ -42,13 +56,13 @@ const interfaceIcon = {
 // Markdown styles
 const style = css(
   {
-    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+    fontFamily: 'Helvetica-Md, "Helvetica Neue", Helvetica, sans-serif',
     fontWeight: 300,
     color: '#808080',
   },
   select('& h1', {
-    fontFamily: serifBoldFamily,
-    fontSize: 48,
+    fontFamily: 'RNSCamelia-Bold',
+    fontSize: 40,
     lineHeight: 1,
     color: '#010101',
   }),
@@ -64,6 +78,7 @@ const style = css(
     height: 40,
     marginTop: 60,
     marginBottom: 10,
+    paddingTop: 5,
     fontSize: 13,
     textTransform: 'uppercase',
     color: '#fff',
@@ -73,8 +88,9 @@ const style = css(
     content: '""',
     width: 18,
     height: 18,
-    marginLeft: 10,
+    marginTop: -5,
     marginRight: 10,
+    marginLeft: 10,
     backgroundColor: 'transparent',
     backgroundPosition: '0 0',
     backgroundRepeat: 'no-repeat',
@@ -116,6 +132,7 @@ const altHeadingStyle = media2(
 const leadTextStyle = css(
   select('& h1 + p', {
     margin: 0,
+    fontFamily: 'Helvetica-Th, "Helvetica Neue", Helvetica, sans-serif',
     fontSize: 18,
     fontWeight: 200,
   }),

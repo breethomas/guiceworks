@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import css, { media2 } from '../styles/css'
+import css, { hover, media2 } from '../styles/css'
 import { maxWidthContent } from '../styles/jso'
 import Copy from './Copy'
 import Title from './Title'
@@ -48,11 +48,18 @@ const offColorStyle = css({
   color: '#808080',
 })
 
-const mailStyle = css({
-  color: '#010101',
-  borderBottom: '1px solid #4d4d4d',
-  textDecoration: 'none',
-})
+const mailStyle = css(
+  {
+    color: '#010101',
+    borderBottom: '1px solid #4d4d4d',
+    textDecoration: 'none',
+    transition: 'color 0.2s',
+  },
+  hover({
+    color: '#ea007b',
+    borderBottomColor: '#ea007b',
+  }),
+)
 
 const MailLink = () => (
   <strong>

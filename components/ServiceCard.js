@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import css, { media2, media3, media4 } from '../styles/css'
+import css, { hover, media2, media3, media4 } from '../styles/css'
 import Icon from './Icons'
 import Link from './Link'
 import type { ServiceProps } from '../types/app.js.flow'
@@ -19,7 +19,10 @@ const style = css(
     height: '100vw',
     maxHeight: 350,
     textDecoration: 'none',
+    backgroundColor: 'rgba(255, 255, 255, 0)',
+    transition: 'background-color 0.4s',
   },
+  hover({ backgroundColor: 'rgba(0, 0, 0, 0.1)' }),
   media2({ width: '50%' }),
   media3({ width: '33.33333%' }),
   media4({ width: '25%' }),

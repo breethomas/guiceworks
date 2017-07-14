@@ -6,6 +6,7 @@ import { TITLE_PREFIX } from '../constants/en'
 import { projectsPath } from '../networking/api'
 import Layout from '../components/Layout'
 import CardCollection from '../components/CardCollection'
+import GreyBoxImage from '../components/GreyBoxImage'
 import ProjectCard from '../components/ProjectCard'
 import ProjectDetail from '../components/ProjectDetail'
 import type { PageProjectProps } from '../types/app.js.flow'
@@ -60,6 +61,9 @@ export default class extends React.PureComponent {
         }
         { project &&
           <ProjectDetail project={project} />
+        }
+        { project && project.greybox &&
+          <GreyBoxImage src={project.greybox} />
         }
         { projects && !is404 &&
           <CardCollection>

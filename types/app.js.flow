@@ -30,6 +30,7 @@ export type ProjectProps = {
   id: string,
   icon: string,
   image: string,
+  greybox?: string,
   next: string,
   prev: string,
   title: string,

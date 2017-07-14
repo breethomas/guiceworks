@@ -11,6 +11,7 @@ const navStyle = css(
   {
     position: 'sticky',
     top: 0,
+    zIndex: 1000,
     display: 'flex',
     alignItems: 'center',
     minHeight: 140,
