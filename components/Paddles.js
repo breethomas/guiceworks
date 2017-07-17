@@ -27,7 +27,7 @@ const paddleStyle = css(
     transition: 'color 0.2s',
   },
   hover(
-    { color: '#ea007b' },
+    { color: '#808080' },
   ),
 )
 

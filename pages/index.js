@@ -50,6 +50,7 @@ export default class extends React.PureComponent {
             <View style={{ maxWidth: 850 }}>
               <Markdown
                 hasAltHeading
+                hasLeadText
                 source={body}
               />
             </View>

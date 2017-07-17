@@ -56,8 +56,8 @@ const mailStyle = css(
     transition: 'color 0.2s',
   },
   hover({
-    color: '#ea007b',
-    borderBottomColor: '#ea007b',
+    color: '#808080',
+    borderBottomColor: '#808080',
   }),
 )
 

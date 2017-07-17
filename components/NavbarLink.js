@@ -28,7 +28,7 @@ const style = css(
     transition: 'width 0.2s',
   }),
   hover(
-    { color: '#ea007b' },
+    { color: '#808080' },
     after({ width: '100%' }),
   ),
 )
