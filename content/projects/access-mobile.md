@@ -9,9 +9,9 @@ prev: sitter
 
 # Simplify practice management and improve patient engagement.
 
-Access Mobile creates products in the Health-tech industry for use in Africa. We
-have worked with them from the start, creating the overall visual brand as well
-as sub brands for the individual products. A simple user experience and clean
+Access Mobile creates products in the Health-tech industry for use in Africa. 
+We've partnered with them from the start, defining their corporate brand and
+sub brands for the individual products. A simple user experience and clean
 interface design for both the amHealth and Gozee MVP products was crucial for
 the company’s initial product success in Africa. The UX needed to be easy to use
 as most of the healthcare facilities still use paper files. The UI design needed
