@@ -6,8 +6,8 @@ icon: front-end.svg
 # How it works.
 
 These design systems ultimately need to be translated into working code that
-runs across various devices. This is a critical phase in the process and too
-often the design language, UX and branding can get lost in the complexity of
+runs across various devices. This is a critical phase in the process where too
+often the design language, UX and branding get lost in the complexity of
 development. At Guiceworks, we help narrow the gap between design and
 development to ensure the implementation reflects the established brand and
 visual language.
