@@ -36,9 +36,10 @@ export const ExperienceIcon = ({ ...props }: any) => (
 )
 
 export const FrontEndIcon = ({ ...props }: any) => (
-  <Svg {...props} viewBox="0 0 32 32">
+  <Svg width={44} height={30} {...props} viewBox="0 0 44 30">
     <g fill="currentColor">
-      <circle fill="currentColor" cx="16" cy="16" r="16" />
+      <polygon points="28.9395 0.0003 26.5775 2.3623 39.2085 14.9913 26.5775 27.6213 28.9395 29.9833 43.9315 14.9913" />
+      <polygon points="0 15.0087 14.991 29.9997 17.353 27.6387 4.723 15.0087 17.353 2.3777 14.991 0.0167" />
     </g>
   </Svg>
 )
