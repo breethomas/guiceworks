@@ -30,4 +30,4 @@ robust features to improve healthcare in Africa.
 ![Access Mobile Gozee UI 01](/static/images/AM-GOZEE_UI_01.jpg)
 ![Access Mobile iso](/static/images/AM_iso.jpg)
 ![Access Mobile UI 02](/static/images/AM_UI_02.jpg)
-![Access Mobile Brand 01](/static/images/AM_Brand_01.png)
+![Access Mobile UI 01](/static/images/AM_UI_01.jpg)
