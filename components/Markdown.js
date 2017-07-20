@@ -64,6 +64,7 @@ const style = css(
     fontFamily: 'RNSCamelia-Bold',
     fontSize: 40,
     lineHeight: 1,
+    marginBottom: 10,
     color: '#010101',
   }),
   select('& p', {
