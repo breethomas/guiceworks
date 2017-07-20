@@ -41,7 +41,7 @@ const indexDeserialize = ({ id, icon, image, title }) => (
 
 const indexMd = fs.readFileSync(path.join(contentDir, 'index.md'), 'utf-8')
 const indexParsed = deserialize(frontMatter(indexMd))
-const cardIds = indexParsed.cards.replace(/\s/g, '').split(',')
+const cardIds = indexParsed.cards
 const cards = cardIds.map(id => (
   flat[id] ? indexDeserialize(flat[id]) : null
 )).filter(value => value !== null)
@@ -50,4 +50,3 @@ const indexProps = Object.assign({}, indexParsed, { cards })
 const indexOutput = JSON.stringify(indexProps)
 fs.writeFileSync('./static/api/index.json', indexOutput)
 console.log('Writing ./static/api/index.json') // eslint-disable-line
-
