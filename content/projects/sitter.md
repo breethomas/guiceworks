@@ -1,7 +1,8 @@
 ---
 title: Sitter
 icon: sitter.svg
-image: /static/images/sitter-thumb.jpg
+image: /static/images/Sitter_home.jpg
+greybox: /static/images/Sitter_grey-box.jpg
 next: access-mobile
 prev: denver-startup-week
 ---
@@ -20,12 +21,10 @@ Lastly, the app allows parents to pay directly through Sitter, eliminating those
 annoying trips to the ATM machine on the way home.
 
 ## Experience Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
+![Sitter UX 01](/static/images/Sitter_UX_01.jpg)
+![Sitter UX 02](/static/images/Sitter_UX_02.jpg)
 
 ## Interface Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-
+![Sitter ISO](/static/images/Sitter_iso.jpg)
+![Sitter UI 01](/static/images/Sitter_UI_01.jpg)
+![Sitter UI 02](/static/images/Sitter_UI_02.jpg)

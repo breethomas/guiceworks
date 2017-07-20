@@ -1,7 +1,7 @@
 ---
 title: NBA
 icon: nba.svg
-image: http://via.placeholder.com/496/ffdc00
+image: /static/images/NBA_home.jpg
 next: moon
 prev: access-mobile
 ---
@@ -17,10 +17,9 @@ nomen quid. Lorem ipsum dolere sit amet nonummy consecuter adspecit nomen quid.
 Lorem ipsum dolere sit amet nonummy consecuter adspecit nomen quid.
 
 ## Experience Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
+![NBA UX 01](/static/images/NBA_UX_01.jpg)
+![NBA UX 02](/static/images/NBA_UX_02.jpg)
 
 ## Interface Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-
+![NBA UI iso](/static/images/NBA_iso.jpg)
+![NBA UI 01](/static/images/NBA_UI_01.jpg)

@@ -1,7 +1,7 @@
 ---
 title: Denver Startup Week
 icon: denver-startup-week.svg
-image: http://via.placeholder.com/496/001f3f
+image: /static/images/DSW_home.jpg
 greybox: /static/images/DSW_grey-box.jpg
 next: sitter
 prev: forelinx
@@ -17,8 +17,8 @@ create a simplified, contextual overall experience for the user, both prior to
 and during the event.
 
 ## Brand Design
-![Denver Startup Week Brand 01](http://via.placeholder.com/1170x650)
-![Denver Startup Week Brand 02](http://via.placeholder.com/1170x650)
+![Denver Startup Week Brand 01](/static/images/DSW_Brand_01.png)
+![Denver Startup Week Brand 02](/static/images/DSW_Brand_02.png)
 
 ## Experience Design
 ![Denver Startup Week UX 02](/static/images/DSW_UX_02.jpg)
@@ -26,5 +26,4 @@ and during the event.
 
 ## Interface Design
 ![Denver Startup Week UI 01](/static/images/DSW_UI_01.jpg)
-![Denver Startup Week UI 01](/static/images/DSW_UI_02.jpg)
 

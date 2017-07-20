@@ -1,7 +1,7 @@
 ---
 title: Moon
 icon: moon.svg
-image: http://via.placeholder.com/496/ff851b
+image: /static/images/Moon_home.jpg
 next: cirrusmd
 prev: nba
 ---
@@ -19,16 +19,15 @@ clients before taking the approved brand and designing the Uer Interface to
 enhance the product experience.
 
 ## Brand Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
+![Moon Brand 01](/static/images/Moon_Brand_01.png)
+![Moon Brand 02](/static/images/Moon_Brand_02.png)
+![Moon Brand 03](/static/images/Moon_Brand_03.png)
 
 ## Experience Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
+![Moon UX 01](/static/images/Moon_UX_01.jpg)
+![Moon UX 02](/static/images/Moon_UX_02.jpg)
 
 ## Interface Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-
+![Moon Iso](/static/images/Moon_iso.jpg)
+![Moon UI 01](/static/images/Moon_UI_01.jpg)
+![Moon UI 02](/static/images/Moon_UI_02.jpg)

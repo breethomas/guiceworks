@@ -1,7 +1,8 @@
 ---
 title: Forelinx
 icon: forelinx.svg
-image: /static/images/forelinx-thumb.jpg
+image: /static/images/Forelinx_home.jpg
+greybox: /static/images/Forelinx_grey-box.jpg
 next: denver-startup-week
 prev: cirrusmd
 ---
@@ -14,8 +15,6 @@ book tee times all through the web based, responsive app. Payment is handled
 through the app so golfers just show up and play!
 
 ## Interface Design
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-![Alt text](http://via.placeholder.com/1170x650)
-
+![Forelinx UI 01](/static/images/Forelinx_UI_01.jpg)
+![Forelinx UI 02](/static/images/Forelinx_UI_02.jpg)
+![Forelinx ISO](/static/images/Forelinx_iso.jpg)
