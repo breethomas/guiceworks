@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import css from '../styles/css'
+import css, { media } from '../styles/css'
 import { easeInOutCubic, animateRotate } from '../styles/jso'
 import Link from './Link'
 import { GuiceworksIcon } from './Icons'
@@ -12,13 +12,19 @@ type Props = {
   isRequesting: boolean,
 }
 
-const style = css({
-  display: 'flex',
-  alignItems: 'center',
-  marginRight: 'auto',
-  width: 75,
-  height: 75,
-})
+const style = css(
+  {
+    display: 'flex',
+    alignItems: 'center',
+    marginRight: 'auto',
+    width: 40,
+    height: 40,
+  },
+  media('(min-width: 23em)', {
+    width: 75,
+    height: 75,
+  }),
+)
 
 const activeStyle = css(
   { ...style },
