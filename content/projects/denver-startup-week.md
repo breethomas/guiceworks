@@ -9,12 +9,9 @@ prev: forelinx
 
 # Celebrating the entrepreneurial spirit.
 
-Denver Startup Week engaged us to rebrand the event and extend that new brand
-into a stronger, more cohesive online and offline presence overall. An icon and
-color language that worked together with the DSW brand was created to define
-tracks, events and subject matter. The website was rebuilt from scratch to
-create a simplified, contextual overall experience for the user, both prior to
-and during the event.
+Challenge: Elevate Denver Startup Week through an identity that communicates its sophistication in programming and its Denver roots.
+
+Outcome: A stronger, more cohesive online and offline presence with an icon and color language to clearly define and navigate through tracks, events and subject matter. 
 
 ## Brand Design
 ![Denver Startup Week Brand 01](/static/images/DSW_Brand_01.png)
