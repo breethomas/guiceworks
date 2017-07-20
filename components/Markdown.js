@@ -41,6 +41,7 @@ const experienceIcon = {
 }
 
 const frontEndIcon = {
+  width: 26,
   backgroundImage: `url(${iconPath}/front-end-white.svg)`,
 }
 
