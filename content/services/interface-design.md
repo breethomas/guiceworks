@@ -10,16 +10,13 @@ business. Great UI Design is a seamless manifestation of Brand, UX and Graphic
 Design. At Guiceworks, we are well versed in the development process and work
 one-on-one with developers to correctly translate even the smallest design
 details to a fluid user interface. Working from the approved style boards, UI
-design is where we bring the work to date together under one intelligent and
+design is where we bring the work together under one intelligent and
 beautiful execution. 
 
 ## Prototype
 
-Prototype in context of UI design. UI always presented in prototype to get as
-“real” of experience as possible. Can test at this point on some things, more
-accurate to make decision about. Prototype in context of UI design. UI always
-presented in prototype to get as “real” of experience as possible. Can test at
-this point on some things, more accurate to make decision about. Prototype in
-context of UI design. UI always presented in prototype to get as “real” of
-experience as possible. Can test at this point on some things, more accurate to
-make decision about. 
+During UI design, we're still prototyping. We build up layers on the 
+prototype step by step, and when UI design is added to the mix, you have a solid 
+proof of concept. Whether you use this to win over investors, seamlessly communicate
+between design and dev partners, or test a realistic experience with users -- this level
+of prototype delivers confidence in the path forward for building the right product.
