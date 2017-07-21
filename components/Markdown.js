@@ -74,10 +74,16 @@ const style = css(
     lineHeight: 1.3,
   }),
   select('& h1 + p', {
-    margin: 0,
     fontFamily: 'Helvetica-Th, "Helvetica Neue", Helvetica, sans-serif',
     fontSize: 18,
     fontWeight: 200,
+  }),
+  select('& h1 + p > em', {
+    fontFamily: 'Helvetica-Md, "Helvetica Neue", Helvetica, sans-serif',
+    fontSize: 13,
+    fontStyle: 'normal',
+    fontWeight: 300,
+    textTransform: 'uppercase',
   }),
   select('& h2', {
     display: 'flex',
@@ -145,6 +151,13 @@ const leadLeadTextStyle = css(
     fontFamily: 'Helvetica-Th, "Helvetica Neue", Helvetica, sans-serif',
     fontSize: 18,
     fontWeight: 200,
+  }),
+  select('& h1 + p + p > em', {
+    fontFamily: 'Helvetica-Md, "Helvetica Neue", Helvetica, sans-serif',
+    fontSize: 13,
+    fontStyle: 'normal',
+    fontWeight: 300,
+    textTransform: 'uppercase',
   }),
   media2(
     select('& h1 + p + p', {

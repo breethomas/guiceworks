@@ -9,9 +9,9 @@ prev: sitter
 
 # Simplify practice management and improve patient engagement.
 
-Challenge: Bridge the gap between healthcare facility and patient to encourage customer retention and raise the bar in healthcare delivery, management, and patient experience in Africa.
+_Challenge:_ Bridge the gap between healthcare facility and patient to encourage customer retention and raise the bar in healthcare delivery, management, and patient experience in Africa.
 
-Outcome: A suite of product designs developed under a cohesive brand umbrella that involves patients real-time in their health management through appointment bookings, provider comparisons and reviews, and mobile health management notifications.
+_Outcome:_ A suite of product designs developed under a cohesive brand umbrella that involves patients real-time in their health management through appointment bookings, provider comparisons and reviews, and mobile health management notifications.
  
 
 ## Brand Design

@@ -8,9 +8,9 @@ prev: access-mobile
 
 # The highlight factory.
 
-Challenge: Bring remote fans from all over the world the very best in basketball highlights so they can stay on top of the action regardless of location, time zone, or TV availability.
+_Challenge:_ Bring remote fans from all over the world the very best in basketball highlights so they can stay on top of the action regardless of location, time zone, or TV availability.
 
-Outcome: A customizable experience of NBA highlights woven together based upon a user’s preferred path of game, player, team or time and the most popular trending before and after game news.
+_Outcome:_ A customizable experience of NBA highlights woven together based upon a user’s preferred path of game, player, team or time and the most popular trending before and after game news.
 
 ## Experience Design
 ![NBA UX 01](/static/images/NBA_UX_01.jpg)
