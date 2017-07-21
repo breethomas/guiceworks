@@ -37,10 +37,9 @@ export default (props: Props) => (
       </Header>
       <Markdown
         hasAltHeading
-        hasLeadText
+        hasDoubleLeadText
         source={props.project.body}
       />
     </Article>
   </PageSection>
 )
-
