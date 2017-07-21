@@ -9,9 +9,9 @@ prev: denver-startup-week
 
 # Rediscover me time.
 
-_Challenge:_ Assure parents “me” time is a good idea and offer an app they can trust to facilitate that time through a network of friends sharing sitters.
+Challenge: Assure parents “me” time is a good idea and offer an app they can trust to facilitate that time through a network of friends sharing sitters.
 
-_Outcome:_ A marketplace of parents and sitters, where reviews, recommendations, payment, time tracking, and immediate contact with a caregiver is only a click away on their phone.
+Outcome: A marketplace of parents and sitters, where reviews, recommendations, payment, time tracking, and immediate contact with a caregiver is only a click away on their phone.
 
 ## Experience Design
 ![Sitter UX 01](/static/images/Sitter_UX_01.jpg)

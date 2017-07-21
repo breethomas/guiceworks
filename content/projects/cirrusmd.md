@@ -9,9 +9,9 @@ prev: moon
 
 # Telemedicine done right.
 
-_Challenge:_ Make doctors as accessible as texting a family member.
+Challenge: Make doctors as accessible as texting a family member.
 
-_Outcome:_ A modern telemedicine platform with 24hr access to healthcare advice and feedback via video chat and text.
+Outcome: A modern telemedicine platform with 24hr access to healthcare advice and feedback via video chat and text.
 
 ## Experience Design
 ![CirrusMD UX 01](/static/images/CMD_UX_01.jpg)

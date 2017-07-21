@@ -8,9 +8,9 @@ prev: nba
 
 # Launch your life.
 
-_Challenge:_ Bring together life coaches and clients, recognizing that one can become the other, and help them navigate those roles in the delivery of customized content.
+Challenge: Bring together life coaches and clients, recognizing that one can become the other, and help them navigate those roles in the delivery of customized content.
 
-_Outcome:_ A strong brand identity with elegant user experience that facilitates engagement, exchange, management, and guidance amongst a unique set of users.
+Outcome: A strong brand identity with elegant user experience that facilitates engagement, exchange, management, and guidance amongst a unique set of users.
 
 ## Brand Design
 ![Moon Brand 01](/static/images/Moon_Brand_01.png)

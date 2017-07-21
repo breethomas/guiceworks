@@ -9,9 +9,9 @@ prev: forelinx
 
 # Celebrating the entrepreneurial spirit.
 
-_Challenge:_ Elevate Denver Startup Week through an identity that communicates its sophistication in programming and its Denver roots.
+Challenge: Elevate Denver Startup Week through an identity that communicates its sophistication in programming and its Denver roots.
 
-_Outcome:_ A stronger, more cohesive online and offline presence with an icon and color language to clearly define and navigate through tracks, events and subject matter. 
+Outcome: A stronger, more cohesive online and offline presence with an icon and color language to clearly define and navigate through tracks, events and subject matter. 
 
 ## Brand Design
 ![Denver Startup Week Brand 01](/static/images/DSW_Brand_01.png)
