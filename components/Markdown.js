@@ -5,7 +5,7 @@ import css, { media2, select } from '../styles/css'
 
 type Props = {
   hasAltHeading?: boolean,
-  hasLeadText?: boolean,
+  hasDoubleLeadText?: boolean,
   source: string,
 }
 
@@ -73,6 +73,12 @@ const style = css(
     fontSize: 14,
     lineHeight: 1.3,
   }),
+  select('& h1 + p', {
+    margin: 0,
+    fontFamily: 'Helvetica-Th, "Helvetica Neue", Helvetica, sans-serif',
+    fontSize: 18,
+    fontWeight: 200,
+  }),
   select('& h2', {
     display: 'flex',
     alignItems: 'center',
@@ -119,6 +125,9 @@ const style = css(
     select('& h1', {
       fontSize: 80,
     }),
+    select('& h1 + p', {
+      fontSize: 20,
+    }),
     select('& h2', {
       marginTop: 80,
     }),
@@ -131,15 +140,14 @@ const altHeadingStyle = media2(
   }),
 )
 
-const leadTextStyle = css(
-  select('& h1 + p', {
-    margin: 0,
+const leadLeadTextStyle = css(
+  select('& h1 + p + p', {
     fontFamily: 'Helvetica-Th, "Helvetica Neue", Helvetica, sans-serif',
     fontSize: 18,
     fontWeight: 200,
   }),
   media2(
-    select('& h1 + p', {
+    select('& h1 + p + p', {
       fontSize: 20,
     }),
   ),
@@ -159,16 +167,16 @@ const HeadingRenderer = (props: any) => {
   return React.createElement(`h${props.level}`, { id: slug }, props.children)
 }
 
-const classNames = (hasAltHeading, hasLeadText) => ([
+const classNames = (hasAltHeading, hasDoubleLeadText) => ([
   style,
   ...(hasAltHeading ? [altHeadingStyle] : []),
-  ...(hasLeadText ? [leadTextStyle] : []),
+  ...(hasDoubleLeadText ? [leadLeadTextStyle] : []),
 ].join(' '))
 
 
-const Component = ({ hasAltHeading, hasLeadText, source, ...props }: Props) => (
+const Component = ({ hasAltHeading, hasDoubleLeadText, source, ...props }: Props) => (
   <Markdown
-    className={classNames(hasAltHeading, hasLeadText)}
+    className={classNames(hasAltHeading, hasDoubleLeadText)}
     source={source}
     renderers={{ Heading: HeadingRenderer }}
     {...props}
@@ -177,7 +185,7 @@ const Component = ({ hasAltHeading, hasLeadText, source, ...props }: Props) => (
 
 Component.defaultProps = {
   hasAltHeading: false,
-  hasLeadText: false,
+  hasDoubleLeadText: false,
 }
 
 export default Component

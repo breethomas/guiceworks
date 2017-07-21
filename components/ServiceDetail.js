@@ -36,10 +36,8 @@ export default (props: Props) => (
       </Header>
       <Markdown
         containerProps={{ 'data-service': props.service.icon.replace('.svg', '') }}
-        hasLeadText
         source={props.service.body}
       />
     </Article>
   </PageSection>
 )
-
