@@ -20,7 +20,7 @@ Product (MVP). We create an exhaustive list of prioritized features and draw a
 line in the sand for the minimum set to deliver value and prove viability in the
 marketplace. 
 
-## Flow Architecture
+## Sketch
 
 Whether it’s a whiteboard, sketchbook or napkin, we believe in whatever it takes
 to get the ideas out quickly to keep the conversation moving. In this phase, we
@@ -31,7 +31,7 @@ understanding of the MVP and ensures we are capturing all the major use cases,
 as well as mapping strategically against business goals. With visual sketching,
 we can identify major roadblocks in the experience early and at low cost.
 
-## Sketch
+## Flow Architecture
 
 Following a sketch of the overall experience, we thoroughly document each
 potential user flow via a detailed diagram comprised of all required features to
