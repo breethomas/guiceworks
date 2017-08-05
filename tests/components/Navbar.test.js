@@ -11,10 +11,10 @@ describe('Navbar', () => {
   })
 
   // it('sets up the correct navigation', () => {
-    // expect(shallow(nav)).exists()
-    // expect(shallow(nav).contains(<NavbarLogo />))
-    // expect(shallow(nav).find('a').at(0).text()).toEqual('<GuiceworksIcon />')
-    // expect(shallow(nav).find('a').at(1).text()).toEqual('Experience Design')
+  // expect(shallow(nav)).exists()
+  // expect(shallow(nav).contains(<NavbarLogo />))
+  // expect(shallow(nav).find('a').at(0).text()).toEqual('<GuiceworksIcon />')
+  // expect(shallow(nav).find('a').at(1).text()).toEqual('Experience Design')
   // })
 
   // it('sets the correct active state (Home)', () => {

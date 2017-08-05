@@ -36,7 +36,7 @@ const Copy = ({ isSmall, isThin, tag, ...props }: Props) => {
   const textProps = { className: isSmall ? styleSmall : style, tag }
   return isThin ?
     <SansThin {...textProps} {...props} />
-  :
+    :
     <SansRegular {...textProps} {...props} />
 }
 

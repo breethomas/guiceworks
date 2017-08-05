@@ -154,8 +154,8 @@ const leadLeadTextStyle = css(
 
 const flatten = (text, child) => (
   typeof child === 'string'
-  ? text + child
-  : React.Children.toArray(child.props.children).reduce(flatten, text)
+    ? text + child
+    : React.Children.toArray(child.props.children).reduce(flatten, text)
 )
 
 // Adds id's to headings
