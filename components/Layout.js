@@ -39,9 +39,9 @@ const Layout = (props: Props) => (
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>{props.title || title}</title>
+      <title>{props.title}</title>
       <meta name="referrer" content="always" />
-      <meta name="application-name" content={props.title || title} />
+      <meta name="application-name" content={props.title} />
       <meta name="subject" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
@@ -50,7 +50,7 @@ const Layout = (props: Props) => (
       <meta property="og:description" content={description} />
       <meta name="twitter:site" content="@guiceworks" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="name" itemProp="name" content={props.title || title} />
+      <meta name="name" itemProp="name" content={props.title} />
       <meta name="url" itemProp="url" content={url} />
       <meta name="image" itemProp="image" content={favicon} />
       <meta name="description" itemProp="description" content={description} />
@@ -59,11 +59,13 @@ const Layout = (props: Props) => (
     </Head>
     <FeatureDetection />
     <AppView>
-      { props.hasNavbar && <Navbar pathname={props.pathname} id={props.query && props.query.id} /> }
+      { props.hasNavbar === true &&
+        <Navbar pathname={props.pathname} id={props.query && props.query.id} />
+      }
       <main role="main">
         {props.children}
       </main>
-      { props.hasFooter && <Footer /> }
+      { props.hasFooter === true && <Footer /> }
     </AppView>
   </View>
 )
@@ -73,7 +75,7 @@ Layout.defaultProps = {
   hasNavbar: true,
   hasFooter: true,
   query: null,
-  title: 'Yo.',
+  title,
 }
 
 export default Layout

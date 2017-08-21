@@ -46,7 +46,7 @@ type Props = {
 }
 
 const Navbar = (props: Props) => {
-  const activePath = props.id ? `${props.pathname}?id=${props.id}` : props.pathname
+  const activePath = props.id != null ? `${props.pathname}?id=${props.id}` : props.pathname
   return (
     <nav className={navStyle}>
       <View className={containmentStyle} >

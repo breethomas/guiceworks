@@ -62,6 +62,7 @@ export default class extends React.PureComponent {
         { project &&
           <ProjectDetail project={project} />
         }
+        { /* flowlint-next-line sketchy-null:off */ }
         { project && project.greybox &&
           <GreyBoxImage src={project.greybox} />
         }

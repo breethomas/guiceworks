@@ -168,8 +168,8 @@ const HeadingRenderer = (props: any) => {
 
 const classNames = (hasAltHeading, hasDoubleLeadText) => ([
   style,
-  ...(hasAltHeading ? [altHeadingStyle] : []),
-  ...(hasDoubleLeadText ? [leadLeadTextStyle] : []),
+  ...(hasAltHeading === true ? [altHeadingStyle] : []),
+  ...(hasDoubleLeadText === true ? [leadLeadTextStyle] : []),
 ].join(' '))
 
 

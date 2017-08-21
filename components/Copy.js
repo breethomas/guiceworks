@@ -33,8 +33,8 @@ const styleSmall = css(
 )
 
 const Copy = ({ isSmall, isThin, tag, ...props }: Props) => {
-  const textProps = { className: isSmall ? styleSmall : style, tag }
-  return isThin ?
+  const textProps = { className: isSmall === true ? styleSmall : style, tag }
+  return isThin === true ?
     <SansThin {...textProps} {...props} />
     :
     <SansRegular {...textProps} {...props} />

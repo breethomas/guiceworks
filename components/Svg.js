@@ -11,8 +11,8 @@ type SvgProps = {
 const Svg = ({ children, size, width, height, ...props }: SvgProps) => (
   <svg
     aria-hidden
-    height={size || height}
-    width={size || width}
+    height={size != null ? size : height}
+    width={size != null ? size : width}
     {...props}
   >
     {children}
@@ -27,4 +27,3 @@ Svg.defaultProps = {
 }
 
 export default Svg
-

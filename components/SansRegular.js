@@ -20,7 +20,7 @@ type Props = {
 }
 
 const SansRegular = ({ className, tag, ...props }: Props) => {
-  const Component = tag || 'span'
+  const Component = tag != null ? tag : 'span'
   return (
     <Component className={`${style} ${className || ''}`} {...props} />
   )
