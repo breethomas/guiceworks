@@ -46,4 +46,3 @@ export default ({ service, ...props }: Props) => (
     <span className={textStyle}>{service.title}</span>
   </Link>
 )
-

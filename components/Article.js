@@ -11,4 +11,3 @@ const Article = ({ isHidden, ...props }: Props) => (
 )
 
 export default withFadeIn(Article)
-

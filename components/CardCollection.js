@@ -23,4 +23,3 @@ export default ({ children, ...props }: Props) => (
     { children }
   </View>
 )
-

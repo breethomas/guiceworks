@@ -58,4 +58,3 @@ export type PageServiceProps = {
   services: Array<ServiceProps>,
   url: UrlProps,
 }
-

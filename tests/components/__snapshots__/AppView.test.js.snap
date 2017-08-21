@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppView shows the correct snapshot for the AppView component tree 1`] = `
+<div
+  className={
+    Object {
+      "data-css-uev7ww": "",
+    }
+  }
+/>
+`;

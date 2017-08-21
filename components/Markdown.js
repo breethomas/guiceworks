@@ -188,4 +188,3 @@ Component.defaultProps = {
 }
 
 export default Component
-

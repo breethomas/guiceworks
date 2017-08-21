@@ -74,4 +74,3 @@ Navbar.defaultProps = {
 }
 
 export default Navbar
-

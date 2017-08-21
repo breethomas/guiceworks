@@ -64,7 +64,7 @@ export default class extends React.PureComponent {
         { services && !is404 &&
           <CardCollection>
             {services.map(serv => (
-              <ServiceCard service={serv} />
+              <ServiceCard key={serv.id} service={serv} />
             ))}
           </CardCollection>
         }
@@ -72,4 +72,3 @@ export default class extends React.PureComponent {
     )
   }
 }
-

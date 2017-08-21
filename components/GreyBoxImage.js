@@ -28,7 +28,7 @@ const imgStyle = css({
   marginLeft: 'auto',
 })
 
-const namify = src => src.split('.')[0].replace(/_|-/, ' ')
+const namify = src => src.split('.')[0].replace(/_|-/gi, ' ')
 
 export default ({ src }: Props) => (
   <View className={style}>
@@ -39,4 +39,3 @@ export default ({ src }: Props) => (
     />
   </View>
 )
-

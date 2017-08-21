@@ -55,4 +55,3 @@ export default ({ dir, nextLink, prevLink }: Props) => (
     </Link>
   </Header>
 )
-

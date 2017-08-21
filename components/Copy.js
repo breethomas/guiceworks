@@ -47,4 +47,3 @@ Copy.defaultProps = {
 }
 
 export default Copy
-

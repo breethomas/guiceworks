@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServiceDetail shows the correct snapshot for the ServiceDetail component tree 1`] = `
+<section
+  className={
+    Object {
+      "data-css-24spax": "",
+    }
+  }
+>
+  <article
+    className="css-1d3ulb6 css-1jyyyen"
+  >
+    <header
+      className={
+        Object {
+          "data-css-hyshfv": "",
+        }
+      }
+    >
+      <img
+        alt="Service 1 title"
+        height={70}
+        src="/static/icons/services/icon.svg"
+        width={70}
+      />
+    </header>
+    <div
+      className="css-js1aix"
+      data-service="icon"
+    >
+      <p>
+        Service 1 
+        <em>
+          body
+        </em>
+      </p>
+    </div>
+  </article>
+</section>
+`;

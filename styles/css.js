@@ -70,4 +70,3 @@ export const placeholder = (...styles: Array<JSO>) => (
 export const disabled = (...styles: Array<JSO>) => (
   modifier('[disabled]', ...styles)
 )
-

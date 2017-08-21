@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading shows the correct snapshot for the Heading component tree (default) 1`] = `
+<h2
+  className="css-lcomo css-1g95qkz"
+>
+  Heading
+</h2>
+`;
+
+exports[`Heading shows the correct snapshot for the Heading component tree (tag) 1`] = `
+<span
+  className="css-lcomo css-1g95qkz"
+>
+  Heading
+</span>
+`;

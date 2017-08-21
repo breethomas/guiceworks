@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown shows the correct snapshot for the Markdown component tree (hasAltHeading) 1`] = `
+<div
+  className="css-js1aix css-uwpr5d"
+>
+  <p>
+    Hello 
+    <em>
+      world
+    </em>
+    .
+  </p>
+</div>
+`;
+
+exports[`Markdown shows the correct snapshot for the Markdown component tree (hasDoubleLeadText) 1`] = `
+<div
+  className="css-js1aix css-jr10g3"
+>
+  <p>
+    Hello 
+    <em>
+      world
+    </em>
+    .
+  </p>
+</div>
+`;
+
+exports[`Markdown shows the correct snapshot for the Markdown component tree 1`] = `
+<div
+  className="css-js1aix"
+>
+  <p>
+    Hello 
+    <em>
+      world
+    </em>
+    .
+  </p>
+</div>
+`;

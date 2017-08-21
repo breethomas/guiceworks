@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SansRegular shows the correct snapshot for the SansRegular component tree 1`] = `
+<p
+  className="css-6p63zg SansRegularClassName"
+>
+  SansRegular
+</p>
+`;

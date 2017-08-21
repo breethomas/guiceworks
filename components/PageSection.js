@@ -8,4 +8,3 @@ const style = css(maxWidthContent)
 export default (props: any) => (
   <section className={style} {...props} />
 )
-

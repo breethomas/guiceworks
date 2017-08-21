@@ -47,4 +47,3 @@ export default ({ href, isActive, ...props }: Props) => (
     {...props}
   />
 )
-

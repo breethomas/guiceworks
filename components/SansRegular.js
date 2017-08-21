@@ -32,4 +32,3 @@ SansRegular.defaultProps = {
 }
 
 export default SansRegular
-

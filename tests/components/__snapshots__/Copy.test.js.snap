@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copy shows the correct snapshot for the Copy component tree (default) 1`] = `
+<p
+  className="css-6p63zg css-1eyhu5m"
+>
+  Copy
+</p>
+`;
+
+exports[`Copy shows the correct snapshot for the Copy component tree (isSmall) 1`] = `
+<p
+  className="css-6p63zg css-1jmoywn"
+>
+  Copy
+</p>
+`;
+
+exports[`Copy shows the correct snapshot for the Copy component tree (isThin) 1`] = `
+<p
+  className="css-isubv6 css-1eyhu5m"
+>
+  Copy
+</p>
+`;
+
+exports[`Copy shows the correct snapshot for the Copy component tree (tag) 1`] = `
+<span
+  className="css-6p63zg css-1eyhu5m"
+>
+  Copy
+</span>
+`;

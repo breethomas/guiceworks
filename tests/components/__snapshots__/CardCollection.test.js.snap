@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardCollection shows the correct snapshot for the CardCollection component tree 1`] = `
+<div
+  className={
+    Object {
+      "data-css-nz4u6x": "",
+    }
+  }
+>
+  <span>
+    CardCollection
+  </span>
+</div>
+`;

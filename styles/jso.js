@@ -25,4 +25,3 @@ export const maxWidthContent = {
   paddingLeft: 20,
   paddingRight: 20,
 }
-

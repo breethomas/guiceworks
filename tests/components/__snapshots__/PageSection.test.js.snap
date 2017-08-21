@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageSection shows the correct snapshot for the PageSection component tree 1`] = `
+<section
+  className={
+    Object {
+      "data-css-24spax": "",
+    }
+  }
+>
+  PageSection
+</section>
+`;

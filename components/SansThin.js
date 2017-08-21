@@ -32,4 +32,3 @@ SansThin.defaultProps = {
 }
 
 export default SansThin
-

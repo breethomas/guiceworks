@@ -31,4 +31,3 @@ SerifBold.defaultProps = {
 }
 
 export default SerifBold
-

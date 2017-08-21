@@ -69,7 +69,7 @@ export default class extends React.PureComponent {
         { projects && !is404 &&
           <CardCollection>
             {projects.map(proj => (
-              <ProjectCard project={proj} />
+              <ProjectCard key={proj.id} project={proj} />
             ))}
           </CardCollection>
         }
@@ -77,4 +77,3 @@ export default class extends React.PureComponent {
     )
   }
 }
-

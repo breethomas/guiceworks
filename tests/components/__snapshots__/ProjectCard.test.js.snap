@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectCard shows the correct snapshot for the ProjectCard component tree 1`] = `
+<a
+  className={
+    Object {
+      "data-css-19armf": "",
+    }
+  }
+  href="/projects/project-1"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundImage": "url(/static/images/image_home.jpg)",
+    }
+  }
+>
+  <span
+    className={
+      Object {
+        "data-css-fv2zf4": "",
+      }
+    }
+  >
+    Project 1 title
+  </span>
+</a>
+`;

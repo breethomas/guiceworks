@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectDetail shows the correct snapshot for the ProjectDetail component tree 1`] = `
+<section
+  className={
+    Object {
+      "data-css-24spax": "",
+    }
+  }
+>
+  <header
+    className={
+      Object {
+        "data-css-1f6b3ur": "",
+      }
+    }
+  >
+    <a
+      className={
+        Object {
+          "data-css-33otqm": "",
+        }
+      }
+      href="/projects/prev-project"
+      onClick={[Function]}
+      title="prev-project"
+    >
+      <svg
+        aria-hidden={true}
+        height={32}
+        style={
+          Object {
+            "transform": "rotate(180deg)",
+          }
+        }
+        viewBox="0 0 32 32"
+        width={32}
+      >
+        <g
+          fill="currentColor"
+        >
+          <polygon
+            points="15.9 0 13.725 2.163 26.11 14.472 0 14.472 0 17.529 26.11 17.529 13.725 29.839 15.9 32 32 16"
+          />
+        </g>
+      </svg>
+    </a>
+    <a
+      className="css-33otqm css-omocl"
+      href="/projects/next-project"
+      onClick={[Function]}
+      title="next-project"
+    >
+      <svg
+        aria-hidden={true}
+        height={32}
+        viewBox="0 0 32 32"
+        width={32}
+      >
+        <g
+          fill="currentColor"
+        >
+          <polygon
+            points="15.9 0 13.725 2.163 26.11 14.472 0 14.472 0 17.529 26.11 17.529 13.725 29.839 15.9 32 32 16"
+          />
+        </g>
+      </svg>
+    </a>
+  </header>
+  <article
+    className="css-1d3ulb6 css-1jyyyen"
+  >
+    <header
+      className={
+        Object {
+          "data-css-ub9vfp": "",
+        }
+      }
+    >
+      <img
+        alt="Project 1 title"
+        height={90}
+        src="/static/icons/projects/icon.svg"
+        width={250}
+      />
+    </header>
+    <div
+      className="css-js1aix css-uwpr5d css-jr10g3"
+    >
+      <p>
+        Project 1 
+        <em>
+          body
+        </em>
+      </p>
+    </div>
+  </article>
+</section>
+`;

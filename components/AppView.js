@@ -12,4 +12,3 @@ const style = css({
 export default (props: any) => (
   <View className={style} {...props} />
 )
-

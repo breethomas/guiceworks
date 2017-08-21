@@ -59,4 +59,3 @@ export default ({ project, ...props }: Props) => (
     <span className={textStyle}>{project.title}</span>
   </Link>
 )
-

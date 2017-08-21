@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarLink shows the correct snapshot for the NavbarLink component tree 1`] = `
+<a
+  className="css-gavebd css-c590e5"
+  href="/projects"
+  onClick={[Function]}
+  onMouseover={[Function]}
+>
+  NavbarLink
+</a>
+`;

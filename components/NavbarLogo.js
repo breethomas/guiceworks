@@ -51,4 +51,3 @@ const NavbarLogo = ({ isActive, isRequesting, ...props }: Props) => (
 )
 
 export default withRouterProgress(NavbarLogo)
-

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GreyBoxImage shows the correct snapshot for the GreyBoxImage component tree 1`] = `
+<div
+  className={
+    Object {
+      "data-css-1vyftnr": "",
+    }
+  }
+>
+  <img
+    alt="AM grey box"
+    className={
+      Object {
+        "data-css-lsfykb": "",
+      }
+    }
+    src="AM_grey-box.jpg"
+  />
+</div>
+`;

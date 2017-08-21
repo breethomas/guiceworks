@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer shows the correct snapshot for the Footer component tree 1`] = `
+<footer
+  className={
+    Object {
+      "data-css-p8642l": "",
+    }
+  }
+>
+  <div
+    className={
+      Object {
+        "data-css-q392fl": "",
+      }
+    }
+  >
+    <div
+      className={
+        Object {
+          "data-css-24spax": "",
+        }
+      }
+    >
+      <h2
+        className="css-lcomo css-5eu6oy"
+      >
+        Contact.
+      </h2>
+      <div
+        className={
+          Object {
+            "data-css-1cicj1j": "",
+          }
+        }
+      >
+        <p
+          className="css-isubv6 css-1eyhu5m"
+        >
+          For more information or work samples email us at 
+          <strong>
+            <a
+              className={
+                Object {
+                  "data-css-1wegod6": "",
+                }
+              }
+              href="mailto:info@guiceworks.com"
+            >
+              info@guiceworks.com
+            </a>
+          </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1hxbxk7": "",
+      }
+    }
+    role="contentinfo"
+  >
+    <div
+      className={
+        Object {
+          "data-css-24spax": "",
+        }
+      }
+    >
+      <p
+        className="css-isubv6 css-1jmoywn"
+      >
+        <span>
+          ©
+        </span>
+        <span>
+           Copyright 2017 Guiceworks INC All rights reserved.
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+`;

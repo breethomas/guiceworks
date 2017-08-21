@@ -99,4 +99,3 @@ export default ({ kind, ...props }: Props) => {
       return <GuiceworksIcon {...props} />
   }
 }
-

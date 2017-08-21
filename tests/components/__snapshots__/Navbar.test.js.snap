@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navbar shows the correct snapshot 1`] = `
+exports[`Navbar shows the correct snapshot for the Navbar component tree 1`] = `
 <nav
   className={
     Object {
-      "data-css-10tusiw": "",
+      "data-css-75bqpx": "",
     }
   }
 >
@@ -16,7 +16,7 @@ exports[`Navbar shows the correct snapshot 1`] = `
     }
   >
     <a
-      className="css-17i7w47"
+      className="css-10y0zv4"
       href="/"
       onClick={[Function]}
       title="Guiceworks"
@@ -40,7 +40,7 @@ exports[`Navbar shows the correct snapshot 1`] = `
       </svg>
     </a>
     <a
-      className="css-31flco "
+      className="css-gavebd "
       href="/services/experience-design"
       onClick={[Function]}
       title="Experience Design"
@@ -61,7 +61,7 @@ exports[`Navbar shows the correct snapshot 1`] = `
       </svg>
     </a>
     <a
-      className="css-31flco "
+      className="css-gavebd "
       href="/services/interface-design"
       onClick={[Function]}
       title="Interface Design"
@@ -82,7 +82,7 @@ exports[`Navbar shows the correct snapshot 1`] = `
       </svg>
     </a>
     <a
-      className="css-31flco "
+      className="css-gavebd "
       href="/services/brand-design"
       onClick={[Function]}
       title="Brand Design"
@@ -126,7 +126,7 @@ exports[`Navbar shows the correct snapshot 1`] = `
       </svg>
     </a>
     <a
-      className="css-31flco "
+      className="css-gavebd "
       href="/services/graphic-design"
       onClick={[Function]}
       title="Graphic Design"
@@ -152,25 +152,25 @@ exports[`Navbar shows the correct snapshot 1`] = `
       </svg>
     </a>
     <a
-      className="css-31flco "
+      className="css-gavebd "
       href="/services/front-end-engineering"
       onClick={[Function]}
       title="Front-end Engineering"
     >
       <svg
         aria-hidden={true}
-        height={32}
-        viewBox="0 0 32 32"
-        width={32}
+        height={30}
+        viewBox="0 0 44 30"
+        width={44}
       >
         <g
           fill="currentColor"
         >
-          <circle
-            cx="16"
-            cy="16"
-            fill="currentColor"
-            r="16"
+          <polygon
+            points="28.9395 0.0003 26.5775 2.3623 39.2085 14.9913 26.5775 27.6213 28.9395 29.9833 43.9315 14.9913"
+          />
+          <polygon
+            points="0 15.0087 14.991 29.9997 17.353 27.6387 4.723 15.0087 17.353 2.3777 14.991 0.0167"
           />
         </g>
       </svg>

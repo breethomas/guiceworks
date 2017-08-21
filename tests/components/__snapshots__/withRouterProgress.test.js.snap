@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withRouterProgress shows the correct snapshot for the wrapped ComposedComponent tree through state changes (error) 1`] = `
+<div
+  data-passed="pass"
+  isRequesting={false}
+/>
+`;
+
+exports[`withRouterProgress shows the correct snapshot for the wrapped ComposedComponent tree through state changes (error) 2`] = `
+<div
+  data-passed="pass"
+  isRequesting={true}
+/>
+`;
+
+exports[`withRouterProgress shows the correct snapshot for the wrapped ComposedComponent tree through state changes (error) 3`] = `
+<div
+  data-passed="pass"
+  isRequesting={false}
+/>
+`;
+
+exports[`withRouterProgress shows the correct snapshot for the wrapped ComposedComponent tree through state changes (normal) 1`] = `
+<div
+  data-passed="pass"
+  isRequesting={false}
+/>
+`;
+
+exports[`withRouterProgress shows the correct snapshot for the wrapped ComposedComponent tree through state changes (normal) 2`] = `
+<div
+  data-passed="pass"
+  isRequesting={true}
+/>
+`;
+
+exports[`withRouterProgress shows the correct snapshot for the wrapped ComposedComponent tree through state changes (normal) 3`] = `
+<div
+  data-passed="pass"
+  isRequesting={false}
+/>
+`;
