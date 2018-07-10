@@ -4,7 +4,7 @@ icon: cirrusmd.svg
 image: /static/images/CMD_home.jpg
 greybox: /static/images/CMD_grey-box.jpg
 next: forelinx
-prev: moon
+prev: access-mobile
 ---
 
 # Telemedicine done right.

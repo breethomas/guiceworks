@@ -33,6 +33,7 @@ const containmentStyle = css(
 )
 
 const links = [
+  { icon: 'ProductIcon', label: 'Product Design', href: '/services?id=product-design' },
   { icon: 'ExperienceIcon', label: 'Experience Design', href: '/services?id=experience-design' },
   { icon: 'InterfaceIcon', label: 'Interface Design', href: '/services?id=interface-design' },
   { icon: 'BrandIcon', label: 'Brand Design', href: '/services?id=brand-design' },

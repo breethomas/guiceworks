@@ -4,7 +4,7 @@ icon: sitter.svg
 image: /static/images/Sitter_home.jpg
 greybox: /static/images/Sitter_grey-box.jpg
 next: access-mobile
-prev: denver-startup-week
+prev: mashey
 ---
 
 # Rediscover me time.

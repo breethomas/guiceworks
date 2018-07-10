@@ -3,7 +3,7 @@ title: Forelinx
 icon: forelinx.svg
 image: /static/images/Forelinx_home.jpg
 greybox: /static/images/Forelinx_grey-box.jpg
-next: denver-startup-week
+next: nba
 prev: cirrusmd
 ---
 

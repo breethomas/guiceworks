@@ -1,18 +1,22 @@
 ---
 title: Yo!
 cards:
-  - sitter
+  - muve
+  - product-design
+  - start-supply
   - experience-design
-  - forelinx
+  - bullseye
+  - mashey
   - interface-design
-  - cirrusmd
-  - denver-startup-week
+  - sitter
   - brand-design
   - access-mobile
+  - cirrusmd
   - graphic-design
+  - forelinx
   - nba
-  - moon
   - front-end-engineering
+  - moon
 ---
 
 # A fight to rid the world of poor design.
