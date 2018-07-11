@@ -14,6 +14,8 @@ Outcome: Outcome text.
 
 ## Brand Design
 ![Mashey Brand 01](/static/images/Mashey_Brand_01.png)
+![Mashey Brand 02](/static/images/Mashey_Brand_02.jpg)
+![Mashey Brand 03](/static/images/Mashey_Brand_03.jpg)
 
 ## Experience Design
 ![Mashey UX 01](/static/images/Mashey_UX_01.jpg)

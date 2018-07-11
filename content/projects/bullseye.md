@@ -13,7 +13,9 @@ Challenge: Challenge
 Outcome: Outcome text.
 
 ## Brand Design
-![Bullseye Brand 01](/static/images/Bullseye_Brand_01.png)
+![Bullseye Brand 01](/static/images/Bullseye_Brand_01.jpg)
+![Bullseye Brand 02](/static/images/Bullseye_Brand_02.png)
+![Bullseye Brand 03](/static/images/Bullseye_Brand_03.png)
 
 ## Experience Design
 ![Bullseye UX 01](/static/images/Bullseye_UX_01.jpg)

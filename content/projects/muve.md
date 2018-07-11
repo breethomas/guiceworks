@@ -14,20 +14,18 @@ Challenge: Create a software product to enhance the nurse and admin workflow, no
 Outcome: Outcome text.
 
 ## Brand Design
-![Muve Consumer Brochure](/static/images/Muve_ConsumerBrochure.jpg)
-![Muve Patients](/static/images/Muve_Patients.jpg)
+![Muve Icons](/static/images/Muve_icons.png)
+![Muve Brand 01](/static/images/Muve_Brand_01.jpg)
+![Muve Brand 02](/static/images/Muve_Brand_02.jpg)
+![Muve Brand 03](/static/images/Muve_Brand_03.jpg)
 
 ## Experience Design
-![Muve Wires 01](/static/images/Muve_wires_01.jpg)
-![Muve Wires 02](/static/images/Muve_wires_02.jpg)
+![Muve UX 01](/static/images/Muve_UX_01.jpg)
+![Muve UX 02](/static/images/Muve_UX_02.jpg)
 
 ## Interface Design
 ![Muve Mockup](/static/images/Muve_Mockup.jpg)
 ![Muve UI 01](/static/images/Muve_UI_01.jpg)
 ![Muve UI 02](/static/images/Muve_UI_02.jpg)
-![Muve UI 03](/static/images/Muve_UI_03.jpg)
-![Muve Apple Watch 01](/static/images/Muve_Apple_Watch_01.jpg)
-![Muve Apple Watch 02](/static/images/Muve_Apple_Watch_02.jpg)
-![Muve Apple Watch 03](/static/images/Muve_Apple_Watch_Screens.jpg)
 ![Muve Watch 01](/static/images/Muve_Watch_01.jpg)
 ![Muve Watch 02](/static/images/Muve_Watch_02.jpg)

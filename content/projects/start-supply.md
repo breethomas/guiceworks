@@ -2,7 +2,6 @@
 title: Start Supply
 icon: start-supply.svg
 image: /static/images/SS_home.jpg
-greybox: /static/images/SS_grey-box.jpg
 next: bullseye
 prev: muve
 ---
@@ -17,6 +16,8 @@ Outcome: Outcome text.
 
 ## Brand Design
 ![Start Supply Brand 01](/static/images/SS_Brand_01.png)
+![Start Supply Brand 02](/static/images/SS_Brand_02.jpg)
+![Start Supply Brand 03](/static/images/SS_Brand_03.png)
 
 ## Experience Design
 ![Start Supply UX 01](/static/images/SS_UX_01.jpg)
