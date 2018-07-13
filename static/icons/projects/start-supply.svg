@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="70px" height="63px" viewBox="0 0 70 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 8</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-8" fill="#000000">
-            <polygon id="Fill-1" points="0 41.1428 23.988 28.1118 2.455 15.0798"></polygon>
-            <polygon id="Fill-2" points="45.6786 41.141 69.5016 28.11 47.8056 15.079"></polygon>
-            <polygon id="Fill-3" points="26.2745 2.0488 23.9875 28.1118 47.8055 15.0788"></polygon>
-            <polygon id="Fill-4" points="23.9874 28.1136 21.6894 54.1736 45.6784 41.1436"></polygon>
-            <polygon id="Fill-5" points="4.1445 0.0002 3.0855 12.0682 14.1115 6.0342"></polygon>
-            <polygon id="Fill-6" points="48.8664 0.0002 47.8054 12.0682 58.8344 6.0342"></polygon>
-            <polygon id="Fill-7" points="7.47 62.2289 18.5 56.1949 8.529 50.1629"></polygon>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.5 62.23"><title>Asset 4</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon points="2.46 15.08 0 41.14 23.99 28.11 2.46 15.08"/><polygon points="47.81 15.08 45.68 41.14 69.5 28.11 47.81 15.08"/><polygon points="26.27 2.05 23.99 28.11 47.81 15.08 26.27 2.05"/><polygon points="23.99 28.11 21.69 54.17 45.68 41.14 23.99 28.11"/><polygon points="4.14 0 3.08 12.07 14.11 6.03 4.14 0"/><polygon points="48.87 0 47.81 12.07 58.84 6.03 48.87 0"/><polygon points="8.53 50.16 7.47 62.23 18.5 56.2 8.53 50.16"/></g></g></svg>
